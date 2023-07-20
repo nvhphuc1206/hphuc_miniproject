@@ -1,0 +1,146 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after:
+  - tmp/hammer__a49zr4h
+  - .bin_reads
+  - tmp/spades_nc2ubl9w
+  - configs
+  - tmp/hammer_wqyojbhj
+  - .bin_reads
+  - tmp/spades_rj3j0r8y
+  - configs
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /Users/huy/Downloads/Organelle/results/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - tmp/hammer_qtik8iyh
+  output_files:
+  - /Users/huy/Downloads/Organelle/results/corrected/corrected.yaml
+  path: /Users/huy/mambaforge-pypy3/envs/unicycler/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /Users/huy/mambaforge-pypy3/envs/unicycler/share/spades/spades_pipeline/scripts/compress_all.py
+  - --input_file
+  - /Users/huy/Downloads/Organelle/results/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /Users/huy/mambaforge-pypy3/envs/unicycler/share/spades
+  - --max_threads
+  - '10'
+  - --output_dir
+  - /Users/huy/Downloads/Organelle/results/corrected
+  - --gzip_output
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /Users/huy/mambaforge-pypy3/envs/unicycler/bin/python
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K39
+  args:
+  - /Users/huy/Downloads/Organelle/results/K39/configs/config.info
+  config_dir: K39
+  del_after: []
+  output_files: []
+  path: /Users/huy/mambaforge-pypy3/envs/unicycler/bin/spades-core
+  short_name: k39
+- STAGE: K59
+  args:
+  - /Users/huy/Downloads/Organelle/results/K59/configs/config.info
+  config_dir: K59
+  del_after: []
+  output_files: []
+  path: /Users/huy/mambaforge-pypy3/envs/unicycler/bin/spades-core
+  short_name: k59
+- STAGE: K89
+  args:
+  - /Users/huy/Downloads/Organelle/results/K89/configs/config.info
+  config_dir: K89
+  del_after: []
+  output_files: []
+  path: /Users/huy/mambaforge-pypy3/envs/unicycler/bin/spades-core
+  short_name: k89
+- STAGE: Copy files
+  args:
+  - /Users/huy/mambaforge-pypy3/envs/unicycler/share/spades/spades_pipeline/scripts/copy_files.py
+  - /Users/huy/Downloads/Organelle/results/K89/before_rr.fasta
+  - /Users/huy/Downloads/Organelle/results/before_rr.fasta
+  - /Users/huy/Downloads/Organelle/results/K89/assembly_graph_after_simplification.gfa
+  - /Users/huy/Downloads/Organelle/results/assembly_graph_after_simplification.gfa
+  - /Users/huy/Downloads/Organelle/results/K89/final_contigs.fasta
+  - /Users/huy/Downloads/Organelle/results/contigs.fasta
+  - /Users/huy/Downloads/Organelle/results/K89/first_pe_contigs.fasta
+  - /Users/huy/Downloads/Organelle/results/first_pe_contigs.fasta
+  - /Users/huy/Downloads/Organelle/results/K89/strain_graph.gfa
+  - /Users/huy/Downloads/Organelle/results/strain_graph.gfa
+  - /Users/huy/Downloads/Organelle/results/K89/scaffolds.fasta
+  - /Users/huy/Downloads/Organelle/results/scaffolds.fasta
+  - /Users/huy/Downloads/Organelle/results/K89/scaffolds.paths
+  - /Users/huy/Downloads/Organelle/results/scaffolds.paths
+  - /Users/huy/Downloads/Organelle/results/K89/assembly_graph_with_scaffolds.gfa
+  - /Users/huy/Downloads/Organelle/results/assembly_graph_with_scaffolds.gfa
+  - /Users/huy/Downloads/Organelle/results/K89/assembly_graph.fastg
+  - /Users/huy/Downloads/Organelle/results/assembly_graph.fastg
+  - /Users/huy/Downloads/Organelle/results/K89/final_contigs.paths
+  - /Users/huy/Downloads/Organelle/results/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_txfzt1ql
+  output_files: []
+  path: /Users/huy/mambaforge-pypy3/envs/unicycler/bin/python
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /Users/huy/mambaforge-pypy3/envs/unicycler/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /Users/huy/Downloads/Organelle/results/scaffolds.fasta
+  - --misc_dir
+  - /Users/huy/Downloads/Organelle/results/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /Users/huy/mambaforge-pypy3/envs/unicycler/bin/python
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  output_files: []
+  path: 'true'
+  short_name: terminate

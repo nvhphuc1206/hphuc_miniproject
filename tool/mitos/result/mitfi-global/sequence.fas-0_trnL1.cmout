@@ -1,0 +1,81 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.2 (July 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute.
+# Freely distributed under a BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         /scr/k70/mitosd/mitos2-refdata/refseq63m/ncRNA/trnL1.cm
+# target sequence database:              /scr/k70san/mitosd/mitos2//cQ39ZhV4//sequence.fas-0
+# max ASCII text line length:            unlimited
+# sequence reporting threshold:          E-value <= 0.01
+# maximum DP search matrix size:         80000.0 Mb
+# HMM gFwd biased comp filter:           off
+# number of worker threads:              1 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       trnL1  [CLEN=73]
+Hit scores:
+ rank     E-value  score  bias  sequence                     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------------------- ------ ------   --- ----- ----  -----------
+  (1) !   1.4e-19   85.3   0.0  Assembly_sequecne;len=16531   4501   4432 -  cm    no 0.34  -
+  (2) !   0.00024   25.0   0.1  Assembly_sequecne;len=16531  12489  12421 -  cm    no 0.28  -
+  (3) !   0.00084   22.9   0.0  Assembly_sequecne;len=16531   2031   2099 +  cm    no 0.36  -
+
+
+Hit alignments:
+>> Assembly_sequecne;len=16531  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.4e-19   85.3   0.0  cm        1       73 []        4501        4432 - .. 1.00    no 0.34
+
+                                                                                   v               v         NC
+                                   (((((((,,<<<<________>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+                        trnL1    1 gCuuuuaAAGGAuAAuAGuUaaUCCauuGGuCUUAGGAaCCaaaaAcUcuuGGUGCAAaUCCaaguaaaaGcu 73  
+                                   :CUUUUAAAGGAUA +AGU  AUCC+UUGGUCUUAGGAACCAAAAA   UUGGUGCAA+UCCAA+UAAAAG:+
+  Assembly_sequecne;len=16531 4501 ACUUUUAAAGGAUAGCAGU-UAUCCGUUGGUCUUAGGAACCAAAAAA--UUGGUGCAACUCCAAAUAAAAGUA 4432
+                                   *******************.9**************************..************************ PP
+
+>> Assembly_sequecne;len=16531  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   0.00024   25.0   0.1  cm        1       73 []       12489       12421 - .. 0.90    no 0.28
+
+                                                v        v                                                    NC
+                                    (((((((,,<<<<________>>>>,<<<<<__~~~~~>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+                        trnL1     1 gCuuuuaAAGGAuAAuAGuUaaUCCauuGGuCU*[5]*aCCaaaaAcUcuuGGUGCAAaUCCaaguaaaaGcu 73   
+                                    :::::UA+  :  A      A  : +UU: U+U     A :AAAAA U:::GGU CAAA CC:::UA:::::+
+  Assembly_sequecne;len=16531 12489 AGAAAUAUGUCUGAUA----AAAGAGUUACUUU*[5]*AGUAAAAAAUAGAGGUUCAAACCCUCUUAUUUCUA 12421
+                                    *********9976533....57899*****998..5..9********************************** PP
+
+>> Assembly_sequecne;len=16531  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   0.00084   22.9   0.0  cm        1       73 []        2031        2099 + .. 0.95    no 0.36
+
+                                                                                                              NC
+                                   (((((((,,<<<<________>>>>,<<<<<___~~~~~>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+                        trnL1    1 gCuuuuaAAGGAuAAuAGuUaaUCCauuGGuCUU*[4]*aCCaaaaAcUcuuGGUGCAAaUCCaaguaaaaGcu 73  
+                                   ::U:U: +AG: :AA  GU A: :C+:UG::+UU     ::CA:   + C UGGU   A UCCA G :A:A::+
+  Assembly_sequecne;len=16531 2031 GUUCUUGUAGUUGAA--GU-ACAACGAUGAUUUU*[4]*GUCAUUGGU-CGUGGUUAGAUUCCAUGUGAGAAUA 2099
+                                   *************85..66.9**********998..8..*********.************************* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (73 consensus positions)
+Target sequences:                                                1  (33062 residues searched)
+Target sequences re-searched for truncated hits:                 1  (532 residues re-searched)
+Windows   passing  local HMM SSV           filter:             107  (0.5112); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              13  (0.06843); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              10  (0.05537); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               5  (0.04587); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:                  (off)
+Envelopes passing glocal HMM envelope defn filter:               5  (0.01462); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               3  (0.006579); expected (0.0001)
+Total CM hits reported:                                          3  (0.006192); includes 0 truncated hit(s)
+
+# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.21
+//
+[ok]

@@ -1,0 +1,9 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:17.818    41M / 178M  WARN    General                 (kmer_coverage_model.cpp   : 218)   Too many erroneous kmers, the estimates might be unreliable
+ * 0:00:22.001    41M / 178M  WARN    General                 (kmer_coverage_model.cpp   : 327)   Valley value was estimated improperly, reset to 3
+ * 0:00:22.001    41M / 178M  WARN    General                 (kmer_coverage_model.cpp   : 366)   Failed to determine erroneous kmer threshold. Threshold set to: 3
+ * 0:00:32.901    58M / 236M  WARN    General                 (kmer_coverage_model.cpp   : 366)   Failed to determine erroneous kmer threshold. Threshold set to: 36
+ * 0:00:16.805    43M / 165M  WARN    General                 (kmer_coverage_model.cpp   : 366)   Failed to determine erroneous kmer threshold. Threshold set to: 40
+ * 0:00:21.574    39M / 165M  WARN    General                 (simplification.cpp        : 504)   The determined erroneous connection coverage threshold may be determined improperly
+======= Warnings saved to /home/hphuc/hphuc_miniproject_organelleseq/tool/getorganelle/extended_spades/warnings.log

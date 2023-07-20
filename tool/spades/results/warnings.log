@@ -1,0 +1,8 @@
+
+=== Error correction and assembling warnings:
+ * 0:01:52.604   508M / 844M  WARN    General                 (kmer_coverage_model.cpp   : 327)   Valley value was estimated improperly, reset to 15
+ * 0:01:56.385   435M / 888M  WARN    General                 (simplification.cpp        : 504)   The determined erroneous connection coverage threshold may be determined improperly
+ * 0:01:16.512   534M / 824M  WARN    General                 (kmer_coverage_model.cpp   : 327)   Valley value was estimated improperly, reset to 3
+ * 0:00:38.245   489M / 694M  WARN    General                 (kmer_coverage_model.cpp   : 327)   Valley value was estimated improperly, reset to 8
+ * 0:00:38.253   489M / 694M  WARN    General                 (kmer_coverage_model.cpp   : 366)   Failed to determine erroneous kmer threshold. Threshold set to: 8
+======= Warnings saved to /Users/huy/Downloads/Organelle/results/warnings.log

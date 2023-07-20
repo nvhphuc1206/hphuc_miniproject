@@ -1,0 +1,15 @@
+- "left reads":
+  - "/home/hphuc/hphuc_miniproject_organelleseq/tool/getorganelle/extended_1_paired.fq"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/home/hphuc/hphuc_miniproject_organelleseq/tool/getorganelle/extended_2_paired.fq"
+  "type": "paired-end"
+- "number": !!int "1"
+  "single reads":
+  - "/home/hphuc/hphuc_miniproject_organelleseq/tool/getorganelle/extended_1_unpaired.fq"
+  "type": "single"
+- "number": !!int "2"
+  "single reads":
+  - "/home/hphuc/hphuc_miniproject_organelleseq/tool/getorganelle/extended_2_unpaired.fq"
+  "type": "single"

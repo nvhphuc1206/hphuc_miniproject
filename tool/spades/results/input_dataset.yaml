@@ -1,0 +1,7 @@
+- "left reads":
+  - "/Users/huy/Downloads/Organelle/SRR1581065_1_sub.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/Users/huy/Downloads/Organelle/SRR1581065_2_sub.fastq.gz"
+  "type": "paired-end"

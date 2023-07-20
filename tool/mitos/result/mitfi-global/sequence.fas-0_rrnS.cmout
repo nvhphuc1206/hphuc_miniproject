@@ -1,0 +1,55 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.2 (July 2016)
+# Copyright (C) 2016 Howard Hughes Medical Institute.
+# Freely distributed under a BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         /scr/k70/mitosd/mitos2-refdata/refseq63m/ncRNA/rrnS.cm
+# target sequence database:              /scr/k70san/mitosd/mitos2//cQ39ZhV4//sequence.fas-0
+# max ASCII text line length:            unlimited
+# sequence reporting threshold:          E-value <= 0.01
+# maximum DP search matrix size:         80000.0 Mb
+# HMM gFwd biased comp filter:           off
+# number of worker threads:              1 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       rrnS  [CLEN=899]
+Hit scores:
+ rank     E-value  score  bias  sequence                     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  --------------------------- ------ ------   --- ----- ----  -----------
+  (1) !  1.4e-205  793.5  41.0  Assembly_sequecne;len=16531  16120  15159 -  cm    no 0.41  -
+
+
+Hit alignments:
+>> Assembly_sequecne;len=16531  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !  1.4e-205  793.5  41.0  cm        1      899 []       16120       15159 - .. 0.96    no 0.41
+
+                                                                                                                    vv                vv      v                            vv v          v v                                   v                      v               v                                          v                                 v  v             v            v      v            v       v                             v    v   v                                                                                                           v        v                                                                                                                         v                       v       v         v                                                        v   v                                                                                                                            v                                                             v                                                   NC
+                                    :::<<<<<_______>>>>>,{{{{{{{{{{,{{{{{{{{,,,,[[[-[[[,,<<____>>,,,,,,(((,,,,,,,<<<<<<<<<<______>>>>>>>>>>,,,<<<<<<__________...____>>->>>><<<--<<___>>->>>,))),,,<<____>>,,,,,]]]]]],,,,,,,,<<<<<--<<<<<____>>>>>>>>>>,}}-}}}}}},,,<<<<<<<<________________>>>-------------->>>>>,}}}}}}}}}},,.,,[[[[,,,,,,((((((((((--------..---((((((((,,,<<<<<<<<<<<<<______>>>>->>>>>>>>>,,,,,,,,,,,,<<____>>))))))))----)))-))))))),,,,<<<<<<---<<---<<<<_________>>>>--->>>>>>>>,,,,,,,,,,<_............_______........>]]]],<<<<-----<<<<____>>>>--->>>>,,,,,,,,{{{{-{{{{{{{{,,,,,,,{{{{{,,{{{{{{{{{{,,,<<<<________>>>>,,,,,,,,[[[[[[[-----------[[-[[--[[[[[[[[[[,,,,(((,,,<<<____>>>,<<____>>,))),,,,,<<<_____>>>,,,,,]]]-]]]---]]]]]]]]----]]]]]]],,}}-}}}}}}}},,,,,<<<<<___>>>>>,,......,,,,,,,,<<<<<<<______>>>>>>>,,,,,,,,,,}}}}},,,,,<<<<<<<_________>>>>>>>,,,,,,,,,,,}}}}}}}}}}-}},,,,,,,,,,,,,,<<<<<<...................________..............................>>>>>>,,,,,,,,,,,,,,,,<<<<<<<<<<____>>>>>>>>>>::::::: CS
+                         rrnS     1 uAAagguuUGGUccUagccuUacuauuaacuuuaacuaaauUUAcAcAUGcAAguaUccgcaucCcaGUGAgaAUGcccucuuucccuuauuugggaaagaggAGcuggcaucAGGCAcAcu...auuuauAgccacuaAcgccUUgcUuagCCACACCccCAaGggaaucAgCAgUgaUaAAuAUUaaguaAuaagcGAAAgcuugacuuAGuuAuaguuaauAgggccGGuaAAuuUcGUGCCAGCaaCCGCGGUUAUACgauaggcccAaguuaauaguuu.ucGGcgUAAAGagugguuaagaaauuaaaa..aaAuuaaaguuaAAuuuuaacuuagcuGUaAAAagcuuaaguuaaaauuAAaaucaauuacgAAAguaacuuuaauaaaucugaaaccacGAAAgcuaagauAcaAACugGGAUUAGAUACCCcacUAugcuuagccgUAAAcuuugA............uuaaaaa........ccgCCaGgguAcUAcgaGcaauAgCuuaAAaccCAAAGgAcUUGgCGgugcuuuAuAuCcaucUAGAGGAGccUGuucuaUAaucGAUAAuCCaCgauaaAcCUuACcuuuucUUGcuaauuCAGcuugUAuACcGCCGucgUcAGcuuAcccuuUgAaggaacaAaAguaagCaaAAuuguuauaaacaAaaAcguCAGGUCaAgGUgcagCuuAUgaaaagGgaagAaaUGggCUACAuUuucuaauauagaaaA......uuACGaAuaauauuuUGAAAuaaauauuUGAAGGaGGAUUUAguAGUAAaauaaaAaUAgAguGuuuauuUGAAuuugGCucUaaagcacGcACAcAuCGCCCGUCACUCuccuc...................UaaaUAAa..............................gaggaGaUAAGUCGUAACAugGuAaGuguAccGGAAggUgcaCuUaGAaaAau 899  
+                                    +A AGGU:UGGUCCU:GCCUU:CUAUUAA:U U:A:UAAA+UUACACAUGCAAGUAUCCGC +CCC GUGAGAAUGCCCU  ::::C+UA++ G::::  AGGAGC :G:A:CA GCACAC    A+  :UA:C:  U ACGCCUUGCU A CCACACCCCCA+GGGAA+CAGCAGUGAUAAA+AUU AG: AU:A:CGAAAG:U:G:CU AGUUAUA:U:A+UAG G::GGUAAAU+UCGUGCCAGC+ACCGCGGU AUACGAU+::C CAA:UUAAUAG:U  +CGGCGUAAAGAGUG::U AG AA++AAAA  A A UA:AGU:AAAUU UAACU: GCUGUAAAAAGC  :AGUUA AAU AAAAU A + ACGAAAGU:ACU:UA UAA+ CU  A::CACGA AGCUA:GA  CAAACUGGGAUUAGAUACCCCACUAUGC:UAGCC UAAAC  +:A                           :CGCCAG:GUACUAC: GCAA  GC :AAAAC:CAAAGGACUUGGCGGUGCUU:A AUCCA+CUAGAGGAGCCUGUUCUAUAAUCGAUAA CC+CGAUA ACCUUACC::::CUUGC+AAUUCAGC+U:UAUACCGCC:UC+UCAGC +ACCCU+ +AAGGAACAA+AGUA GCA AAU :U+A A A: AAAACGU:AGGUCAAGGUG:AGCUUAUG::::GG+AAGAAAUGGGCUACAUUUUCU  ++ AGAA+A      +UACGAA+::U:UU:UGAAA+:AA:A:: +AAGGAGGAUUUAG+AGUAAA::AA:AAUAGAGUG:UU::UUGAAU++GGC+ U:AAGCACGCACACA+CGCCCGUCAC+CUC UC                                                         GA GAGA+AAGUCGUAACA+GG:AAG::UAC:GGAA:GUG::CUU:GA++A  
+  Assembly_sequecne;len=16531 16120 CACAGGUUUGGUCCUGGCCUUUCUAUUAAUUCUUAAUAAAAUUACACAUGCAAGUAUCCGCGCCCCGGUGAGAAUGCCCUCCAGAUCCUAAA-GAUCAAAAGGAGCAGGUAUCAAGCACACCuauAACGGUAGCUCAUAACGCCUUGCUCAACCACACCCCCACGGGAAACAGCAGUGAUAAAAAUUAAGCCAUGAACGAAAGUUUGACUAAGUUAUAUUAAUUAGAGUUGGUAAAUCUCGUGCCAGCCACCGCGGUCAUACGAUUAACCCAAAUUAAUAGAUCcACGGCGUAAAGAGUGUUUAAGAAAAAAAAAccACAAUAGAGUUAAAUUAUAACUAAGCUGUAAAAAGCCCUAGUUAAAAU-AAAAUAACCCACGAAAGUGACUCUAAUAAUCCU-GACACACGAUAGCUAGGACCCAAACUGGGAUUAGAUACCCCACUAUGCCUAGCCCUAAACCCAAAuaguuacauaac-------aaaacuauUCGCCAGAGUACUACUCGCAACUGCCUAAAACUCAAAGGACUUGGCGGUGCUUCACAUCCACCUAGAGGAGCCUGUUCUAUAAUCGAUAAACCCCGAUAGACCUUACCAACCCUUGCCAAUUCAGCCUAUAUACCGCCAUCUUCAGCAAACCCUAAAAAGGAACAAUAGUAAGCACAAUCAUAACACAUAAAAACGUUAGGUCAAGGUGUAGCUUAUGGGUUGGAAAGAAAUGGGCUACAUUUUCUACAUAAGAAUAcccaccAUACGAAAGUUUUUAUGAAACUAAAAACCAAAGGAGGAUUUAGCAGUAAAUCAAGAAUAGAGUGCUUGAUUGAAUAAGGCCAUGAAGCACGCACACACCGCCCGUCACCCUCCUCaagcauguaguaauaaaaa--------uaaccuauauucaauuacacaaccaugcaaGAAGAGACAAGUCGUAACAAGGUAAGCAUACUGGAAAGUGUGCUUGGAUUACC 15159
+                                    *****************************************************************************************999.***************************998667778********************************************************************************************************************************************************975379*****************9998776665422789*****************************************9985.888999999*****************9887777.68*****************************************************************9988754332.......23567789***************************************************************************************************************************************************************************************************************************************************************9944444458************************************************************************************************************************999766554444........44556666777777788899999************************************************************ PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (899 consensus positions)
+Target sequences:                                                1  (33062 residues searched)
+Target sequences re-searched for truncated hits:                 1  (4492 residues re-searched)
+Windows   passing  local HMM SSV           filter:              25  (0.8185); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              24  (0.8003); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:               3  (0.1114); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               1  (0.08691); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:                  (off)
+Envelopes passing glocal HMM envelope defn filter:               1  (0.02562); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               1  (0.02562); expected (0.0001)
+Total CM hits reported:                                          1  (0.02562); includes 0 truncated hit(s)
+
+# CPU time: 0.70u 0.06s 00:00:00.76 Elapsed: 00:00:00.76
+//
+[ok]
