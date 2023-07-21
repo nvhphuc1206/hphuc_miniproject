@@ -58,7 +58,7 @@ bash Module1_QC.sh <input1> <input2> <output_directory>
 - `input2`: path to second input file
 - `output_directory`: path to where you want to store the results
 Noted: <input1> <input2> <output_directory> must be entered in the correct order.
-- Ex:
+- Example:
 ```sh 
 bash Module1_QC.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/fastqc/raw/
 ```
@@ -78,7 +78,7 @@ bash Module2_Filtering.sh <input1> <input2> <output_directory> <quality_control_
 `conda activate fastp
 fastp -h`
 Noted: <input1> <input2> <output_directory> <quality_control_output_directory> <argument> must be entered in the correct order. Additionally, you can leave up to 5 filter parameters and if the parameter has spaces, leave it in `" "`
-- Ex:
+- Example:
 ```sh 
 bash Module2_Filtering.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/fastp/test tool/fastqc/test "--cut_tail 10" "--length_limit 50"
 ```
@@ -95,15 +95,15 @@ bash Module3_Assembly.sh <input1> <input2> <output_directory>
 - `input2`: path to second input file
 - `output_directory`: path to where you want to store the assembly result
 Noted: <input1> <input2> <output_directory> must be entered in the correct order.
-- Ex:
+- Example:
 ```sh 
 bash Module3_Assembly.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/getorganelle/raw
 ```
 - Key output files of GetOrganelle will be saved in `output_directory` and include: 
--- `*.path_sequence.fasta`: each fasta file represents one type of genome structure
--- `*.selected_graph.gfa`: the organelle-only assembly graph
--- `get_org.log.txt`: the log file
--- `extended_K*.assembly_graph.fastg`: the raw assembly graph
+    - `*.path_sequence.fasta`: each fasta file represents one type of genome structure
+    -  `*.selected_graph.gfa`: the organelle-only assembly graph
+    -  `get_org.log.txt`: the log file
+    -  `extended_K*.assembly_graph.fastg`: the raw assembly graph
 
 
 ### Module 4: Quality control for assembly result by Bandage
@@ -138,7 +138,7 @@ bash Mainscript.sh <input1> <input2> <output_directory> <quality_control_output_
 - `quality_control_output_directory`: path to where you want to store the FastQC reports for the trimming results. 
 - `assembly_output_directory`: path to where you want to store the assembly result
 - `argument`: parameters you want to filter data as on module 2 introduced
-- Ex:
+- Example:
 ```sh 
 bash Mainscript.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/fastp/test tool/fastqc/test tool/getorganelle/test
 ```
