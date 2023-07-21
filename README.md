@@ -20,10 +20,16 @@ The pipeline includes 6 modules:
 
 
 ## Table of Contents:
- - [Description](#descrition)
+ - [Description](#description)
  - [Table of Contents](#table-of-contents)
  - [Requirements](#requirements)
  - [Usage](#usage)
+    - [Module 1](#module-1-quality-control-by-fastqc)
+    - [Module 2](#module-2-trimming-and-filtering-sequencing-data-by-fastp)
+    - [Module 3](#module-3-de-novo-assembly-of-the-mitochondrial-genome-by-getorganelle)
+    - [Module 4](#module-4-quality-control-for-assembly-result-by-bandage)
+    - [Module 5](#module-5-assembly-sequence-annotation-by-mitos)
+    - [Module 6](#module-6-identify-target-species-megablast)
  - [Citation](#citation)
 
 
