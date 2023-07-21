@@ -60,10 +60,11 @@ get_organelle_config.py --add animal_mt
 ```sh 
 bash Module1_QC.sh <input1> <input2> <output_directory>
 ```
+- Therein:
     - `input1`: path to first input file
     - `input2`: path to second input file
     - `output_directory`: path to where you want to store the results
-Noted: <input1> <input2> <output_directory> must be entered in the correct order.
+- Noted: <input1> <input2> <output_directory> must be entered in the correct order.
 - Example:
 ```sh 
 bash Module1_QC.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/fastqc/raw/
@@ -76,14 +77,15 @@ bash Module1_QC.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.
 ```sh 
 bash Module2_Filtering.sh <input1> <input2> <output_directory> <quality_control_output_directory> <argument1> <argument2> <argument3> <argument4> <argument5>
 ```
-- `input1`: path to first input file
-- `input2`: path to second input file
-- `output_directory`: path to where you want to store the trimming results
-- `quality_control_output_directory`: path to where you want to store the FastQC reports for the trimming results. 
-- `argument`: parameters you want to filter data (--trim_poly_g, --overlap_len_require, ... ). You can refer to the parameters by
+- Therein:
+    - `input1`: path to first input file
+    - `input2`: path to second input file
+    - `output_directory`: path to where you want to store the trimming results
+    - `quality_control_output_directory`: path to where you want to store the FastQC reports for the trimming results. 
+    - `argument`: parameters you want to filter data (--trim_poly_g, --overlap_len_require, ... ). You can refer to the parameters by
 `conda activate fastp
 fastp -h`
-Noted: <input1> <input2> <output_directory> <quality_control_output_directory> <argument> must be entered in the correct order. Additionally, you can leave up to 5 filter parameters and if the parameter has spaces, leave it in `" "`
+- Noted: <input1> <input2> <output_directory> <quality_control_output_directory> <argument> must be entered in the correct order. Additionally, you can leave up to 5 filter parameters and if the parameter has spaces, leave it in `" "`
 - Example:
 ```sh 
 bash Module2_Filtering.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/fastp/test tool/fastqc/test "--cut_tail 10" "--length_limit 50"
@@ -97,10 +99,11 @@ bash Module2_Filtering.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065
 ```sh 
 bash Module3_Assembly.sh <input1> <input2> <output_directory>
 ```
-- `input1`: path to first input file
-- `input2`: path to second input file
-- `output_directory`: path to where you want to store the assembly result
-Noted: <input1> <input2> <output_directory> must be entered in the correct order.
+- Therein:
+    - `input1`: path to first input file
+    - `input2`: path to second input file
+    - `output_directory`: path to where you want to store the assembly result
+- Noted: <input1> <input2> <output_directory> must be entered in the correct order.
 - Example:
 ```sh 
 bash Module3_Assembly.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/getorganelle/raw
@@ -115,22 +118,22 @@ bash Module3_Assembly.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_
 ### Module 4: Quality control for assembly result by Bandage
 - Bandage (a Bioinformatics Application for Navigating De novo Assembly Graphs Easily) is a tool for visualizing assembly graphs with connections. 
 - Instructions for downloading and using Bandage can be consulted from the 2 links below:
-`http://rrwick.github.io/Bandage/`
-`https://github.com/rrwick/Bandage/wiki/Getting-started`
+    - `http://rrwick.github.io/Bandage/`
+    - `https://github.com/rrwick/Bandage/wiki/Getting-started`
 
 
 ### Module 5: Assembly sequence annotation by MITOS
 - MITOS is a web server for the automatic annotation of metazoan mitochondrial genomes. In this project I will use MITOS web server because of time limit and problem while standing alone this tool. Instructions for downloading and using MITOS can be consulted from the 2 links below:
-`http://mitos2.bioinf.uni-leipzig.de/index.py`
-`https://gitlab.com/Bernt/MITOS`
+    - `http://mitos2.bioinf.uni-leipzig.de/index.py`
+    - `https://gitlab.com/Bernt/MITOS`
 
 
 ### Module 6: Identify target species MEGA,BLAST
 - To identify the target pig species, I used the MUSCLE algorithm tool included in the MEGA (MUltiple Sequence Comparison by Log- Expectation) tool to perform Multiple Sequence Alignment with the database of Suidae family `database`. From the alignment results, I draw a phylogenetic tree to find the most closely related species.
 - Instructions for downloading and using MEGA can be consulted from the links below:
-`https://www.megasoftware.net/`
+    - `https://www.megasoftware.net/`
 - BLAST NCBI will be the tool to double check the results by blasting the assembly sequence against the database from NCBI
-`https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome`
+    - `https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome`
 
 
 ### Mainscript: The script perform cutting, quality control and assembly steps
@@ -138,12 +141,13 @@ bash Module3_Assembly.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_
 ```sh 
 bash Mainscript.sh <input1> <input2> <output_directory> <quality_control_output_directory> <assembly_output_directory> <argument1> <argument2> <argument3> <argument4> <argument5>
 ```
-- `input1`: path to first input target-trimmed file
-- `input2`: path to second input target-trimmed file
-- `output_directory`: path to where you want to store the trimming results
-- `quality_control_output_directory`: path to where you want to store the FastQC reports for the trimming results. 
-- `assembly_output_directory`: path to where you want to store the assembly result
-- `argument`: parameters you want to filter data as on module 2 introduced
+- Therein:
+    - `input1`: path to first input target-trimmed file
+    - `input2`: path to second input target-trimmed file
+    - `output_directory`: path to where you want to store the trimming results
+    - `quality_control_output_directory`: path to where you want to store the FastQC reports for the trimming results. 
+    - `assembly_output_directory`: path to where you want to store the assembly result
+    - `argument`: parameters you want to filter data as on module 2 introduced
 - Example:
 ```sh 
 bash Mainscript.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/fastp/test tool/fastqc/test tool/getorganelle/test
