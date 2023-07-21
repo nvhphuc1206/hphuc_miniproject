@@ -1,0 +1,118 @@
+ý0---
+max read length: 101
+nomerge max read length: 101
+average read length: 95.0859
+average coverage: 9.56891
+libraries:
+  - type:            paired-end
+    number:          1
+    orientation:     fr
+    left reads:
+      - '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/corrected/extended_1_paired.00.0_0.cor.fastq.gz'
+    right reads:
+      - '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/corrected/extended_2_paired.00.0_0.cor.fastq.gz'
+    single reads:
+      - '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/corrected/extended__unpaired.00.0_0.cor.fastq.gz'
+    data:
+      unmerged read length: 101
+      merged read length: 0
+      insert size mean: 302.105
+      insert size deviation: 16.7811
+      insert size left quantile: 282
+      insert size right quantile: 324
+      insert size median: 302
+      insert size mad: 11
+      insert size distribution: { 221: 3, 225: 1, 226: 4, 227: 1, 228: 4, 
+                                  230: 1, 231: 1, 232: 2, 233: 1, 234: 1, 
+                                  235: 2, 237: 2, 238: 4, 239: 1, 240: 1, 
+                                  242: 1, 243: 3, 244: 1, 245: 1, 246: 3, 
+                                  247: 2, 248: 1, 249: 2, 250: 1, 251: 2, 
+                                  252: 6, 253: 5, 254: 1, 255: 4, 256: 5, 
+                                  257: 8, 258: 7, 259: 6, 260: 2, 261: 7, 
+                                  262: 5, 263: 6, 264: 7, 265: 11, 266: 5, 
+                                  267: 18, 268: 15, 269: 21, 270: 25, 271: 23, 
+                                  272: 29, 273: 33, 274: 45, 275: 58, 276: 53, 
+                                  277: 69, 278: 74, 279: 97, 280: 109, 
+                                  281: 124, 282: 128, 283: 151, 284: 130, 
+                                  285: 157, 286: 164, 287: 186, 288: 171, 
+                                  289: 188, 290: 184, 291: 212, 292: 220, 
+                                  293: 225, 294: 220, 295: 233, 296: 211, 
+                                  297: 212, 298: 242, 299: 238, 300: 213, 
+                                  301: 226, 302: 233, 303: 246, 304: 216, 
+                                  305: 231, 306: 212, 307: 201, 308: 195, 
+                                  309: 228, 310: 205, 311: 205, 312: 174, 
+                                  313: 177, 314: 173, 315: 169, 316: 156, 
+                                  317: 140, 318: 145, 319: 127, 320: 108, 
+                                  321: 107, 322: 104, 323: 103, 324: 99, 
+                                  325: 101, 326: 87, 327: 98, 328: 88, 
+                                  329: 79, 330: 65, 331: 48, 332: 60, 333: 46, 
+                                  334: 45, 335: 39, 336: 44, 337: 34, 338: 25, 
+                                  339: 20, 340: 18, 341: 13, 342: 12, 343: 9, 
+                                  344: 11, 345: 12, 346: 6, 347: 3, 348: 2, 
+                                  349: 4, 350: 1, 353: 1, 354: 2, 367: 1, 
+                                  378: 1 }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/.bin_reads/INFO_0'
+        paired read prefix: '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/.bin_reads/paired_0'
+        merged read prefix: '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/.bin_reads/merged_0'
+        single read prefix: '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/.bin_reads/single_0'
+        chunk num:       1
+      single reads mapped: false
+      library index:   0
+      number of reads: 152883
+      total nucleotides: 14665196
+  - type:            single
+    number:          1
+    single reads:
+      - '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/corrected/extended_1_unpaired.00.1_0.cor.fastq.gz'
+    data:
+      unmerged read length: 101
+      merged read length: 0
+      insert size mean: 0
+      insert size deviation: 0
+      insert size left quantile: 0
+      insert size right quantile: 0
+      insert size median: 0
+      insert size mad: 0
+      insert size distribution: {  }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/.bin_reads/INFO_1'
+        paired read prefix: '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/.bin_reads/paired_1'
+        merged read prefix: '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/.bin_reads/merged_1'
+        single read prefix: '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/.bin_reads/single_1'
+        chunk num:       1
+      single reads mapped: true
+      library index:   1
+      number of reads: 40480
+      total nucleotides: 3784269
+  - type:            single
+    number:          2
+    single reads:
+      - '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/corrected/extended_2_unpaired.00.2_0.cor.fastq.gz'
+    data:
+      unmerged read length: 101
+      merged read length: 0
+      insert size mean: 0
+      insert size deviation: 0
+      insert size left quantile: 0
+      insert size right quantile: 0
+      insert size median: 0
+      insert size mad: 0
+      insert size distribution: {  }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/.bin_reads/INFO_2'
+        paired read prefix: '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/.bin_reads/paired_2'
+        merged read prefix: '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/.bin_reads/merged_2'
+        single read prefix: '/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/.bin_reads/single_2'
+        chunk num:       1
+      single reads mapped: true
+      library index:   2
+      number of reads: 38396
+      total nucleotides: 3587553
+...

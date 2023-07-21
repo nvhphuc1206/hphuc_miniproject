@@ -1,0 +1,100 @@
+
+GetOrganelle v1.7.7.0
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.8.17 (default, Jul  5 2023, 21:04:15)  [GCC 11.2.0]
+PLATFORM: Linux LAPTOP-FC0RDBJ7 5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023 x86_64 x86_64
+PYTHON LIBS: GetOrganelleLib 1.7.7.0; numpy 1.24.3; sympy 1.11.1; scipy 1.10.1
+DEPENDENCIES: Bowtie2 2.4.1; SPAdes 3.15.5; Blast 2.5.0
+GETORG_PATH=/home/hphuc/.GetOrganelle
+SEED  DB: animal_mt 0.0.1
+LABEL DB: animal_mt 0.0.1
+WORKING DIR: /mnt/d/hphuc_miniproject_organelleseq
+/home/hphuc/anaconda3/envs/getorganelle/bin/get_organelle_from_reads.py -1 raw_data/SRR1581065_1_sub.fastq.gz -2 raw_data/SRR1581065_2_sub.fastq.gz -o tool/getorganelle/raw -F animal_mt -R 10
+
+2023-07-21 15:26:30,872 - INFO: Pre-reading fastq ...
+2023-07-21 15:26:30,873 - INFO: Estimating reads to use ... (to use all reads, set '--reduce-reads-for-coverage inf --max-reads inf')
+2023-07-21 15:26:30,939 - INFO: Tasting 100000+100000 reads ...
+2023-07-21 15:26:45,148 - INFO: Estimating reads to use finished.
+2023-07-21 15:26:45,153 - INFO: Unzipping reads file: raw_data/SRR1581065_1_sub.fastq.gz (94400595 bytes)
+2023-07-21 15:26:54,214 - INFO: Unzipping reads file: raw_data/SRR1581065_2_sub.fastq.gz (96890871 bytes)
+2023-07-21 15:27:03,016 - INFO: Counting read qualities ...
+2023-07-21 15:27:03,185 - INFO: Identified quality encoding format = Illumina 1.8+
+2023-07-21 15:27:03,186 - INFO: Phred offset = 33
+2023-07-21 15:27:03,187 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2023-07-21 15:27:03,230 - INFO: Mean error rate = 0.0488
+2023-07-21 15:27:03,233 - INFO: Counting read lengths ...
+2023-07-21 15:27:12,835 - INFO: Mean = 101.0 bp, maximum = 101 bp.
+2023-07-21 15:27:12,836 - INFO: Reads used = 1000000+1000000
+2023-07-21 15:27:12,836 - INFO: Pre-reading fastq finished.
+
+2023-07-21 15:27:12,837 - INFO: Making seed reads ...
+2023-07-21 15:27:12,839 - INFO: Seed bowtie2 index existed!
+2023-07-21 15:27:12,840 - INFO: Mapping reads to seed bowtie2 index ...
+2023-07-21 15:27:51,823 - INFO: Mapping finished.
+2023-07-21 15:27:51,829 - INFO: Seed reads made: tool/getorganelle/raw/seed/animal_mt.initial.fq (627152 bytes)
+2023-07-21 15:27:51,834 - INFO: Making seed reads finished.
+
+2023-07-21 15:27:51,835 - INFO: Checking seed reads and parameters ...
+2023-07-21 15:27:51,835 - INFO: The automatically-estimated parameter(s) do not ensure the best choice(s).
+2023-07-21 15:27:51,835 - INFO: If the result graph is not a circular organelle genome, 
+2023-07-21 15:27:51,836 - INFO:   you could adjust the value(s) of '-w'/'-R' for another new run.
+2023-07-21 15:27:53,165 - INFO: Pre-assembling mapped reads ...
+2023-07-21 15:27:57,479 - INFO: Pre-assembling mapped reads finished.
+2023-07-21 15:27:57,480 - INFO: Estimated animal_mt-hitting base-coverage = 42.71
+2023-07-21 15:27:57,639 - INFO: Estimated word size(s): 43
+2023-07-21 15:27:57,640 - INFO: Setting '-w 43'
+2023-07-21 15:27:57,640 - INFO: Setting '--max-extending-len inf'
+2023-07-21 15:27:57,696 - INFO: Checking seed reads and parameters finished.
+
+2023-07-21 15:27:57,697 - INFO: Making read index ...
+2023-07-21 15:28:26,055 - INFO: 1980103 candidates in all 2000000 reads
+2023-07-21 15:28:26,056 - INFO: Pre-grouping reads ...
+2023-07-21 15:28:26,057 - INFO: Setting '--pre-w 43'
+2023-07-21 15:28:26,161 - INFO: 11232/11232 used/duplicated
+2023-07-21 15:28:32,452 - INFO: 72 groups made.
+2023-07-21 15:28:32,555 - INFO: Making read index finished.
+
+2023-07-21 15:28:32,556 - INFO: Extending ...
+2023-07-21 15:28:32,556 - INFO: Adding initial words ...
+2023-07-21 15:28:32,623 - INFO: AW 47394
+2023-07-21 15:28:52,480 - INFO: Round 1: 1980103/1980103 AI 84880 AW 2896990
+2023-07-21 15:29:12,866 - INFO: Round 2: 1980103/1980103 AI 190661 AW 6114952
+2023-07-21 15:29:31,906 - INFO: Round 3: 1980103/1980103 AI 204013 AW 6704820
+2023-07-21 15:29:49,282 - INFO: Round 4: 1980103/1980103 AI 208519 AW 6896552
+2023-07-21 15:30:06,577 - INFO: Round 5: 1980103/1980103 AI 210471 AW 6976814
+2023-07-21 15:30:23,712 - INFO: Round 6: 1980103/1980103 AI 211746 AW 7028208
+2023-07-21 15:30:40,713 - INFO: Round 7: 1980103/1980103 AI 212952 AW 7073930
+2023-07-21 15:30:57,429 - INFO: Round 8: 1980103/1980103 AI 213766 AW 7105636
+2023-07-21 15:31:14,406 - INFO: Round 9: 1980103/1980103 AI 214193 AW 7121588
+2023-07-21 15:31:30,962 - INFO: Round 10: 1980103/1980103 AI 214305 AW 7126002
+2023-07-21 15:31:30,963 - INFO: Hit the round limit 10 and terminated ...
+2023-07-21 15:31:44,074 - INFO: Extending finished.
+
+2023-07-21 15:31:44,124 - INFO: Separating extended fastq file ... 
+2023-07-21 15:31:46,669 - INFO: Setting '-k 21,55,85'
+2023-07-21 15:31:46,669 - INFO: Assembling using SPAdes ...
+2023-07-21 15:31:46,682 - INFO: spades.py -t 1  --phred-offset 33 -1 tool/getorganelle/raw/extended_1_paired.fq -2 tool/getorganelle/raw/extended_2_paired.fq --s1 tool/getorganelle/raw/extended_1_unpaired.fq --s2 tool/getorganelle/raw/extended_2_unpaired.fq -k 21,55,85 -o tool/getorganelle/raw/extended_spades
+2023-07-21 15:38:46,356 - INFO: Insert size = 302.105, deviation = 16.7811, left quantile = 282, right quantile = 324
+2023-07-21 15:38:46,357 - INFO: Assembling finished.
+
+2023-07-21 15:38:47,648 - INFO: Slimming tool/getorganelle/raw/extended_spades/K85/assembly_graph.fastg finished!
+2023-07-21 15:38:47,648 - INFO: Slimming assembly graphs finished.
+
+2023-07-21 15:38:47,653 - INFO: Extracting animal_mt from the assemblies ...
+2023-07-21 15:38:47,715 - INFO: Disentangling tool/getorganelle/raw/extended_spades/K85/assembly_graph.fastg.extend-animal_mt.fastg as a circular genome ... 
+2023-07-21 15:38:47,732 - INFO: Average animal_mt kmer-coverage = 16.0
+2023-07-21 15:38:47,732 - INFO: Average animal_mt base-coverage = 95.1
+2023-07-21 15:38:47,733 - INFO: Writing output ...
+2023-07-21 15:38:47,743 - INFO: Writing PATH1 of complete animal_mt to tool/getorganelle/raw/animal_mt.K85.complete.graph1.1.path_sequence.fasta
+2023-07-21 15:38:47,744 - INFO: Writing GRAPH to tool/getorganelle/raw/animal_mt.K85.complete.graph1.selected_graph.gfa
+2023-07-21 15:38:47,821 - INFO: Result status of animal_mt: circular genome
+2023-07-21 15:38:47,867 - INFO: Please visualize tool/getorganelle/raw/extended_K85.assembly_graph.fastg.extend-animal_mt.fastg using Bandage to confirm the final result.
+2023-07-21 15:38:47,867 - INFO: Writing output finished.
+2023-07-21 15:38:47,868 - INFO: Extracting animal_mt from the assemblies finished.
+
+
+Total cost 738.51 s
+Thank you!

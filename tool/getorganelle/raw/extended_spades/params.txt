@@ -1,0 +1,49 @@
+Command line: /home/hphuc/SPAdes-3.15.5/bin/spades.py	-t	1	--phred-offset	33	-1	/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_1_paired.fq	-2	/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_2_paired.fq	--s1	/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_1_unpaired.fq	--s2	/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_2_unpaired.fq	-k	21,55,85	-o	/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades	
+
+System information:
+  SPAdes version: 3.15.5
+  Python version: 3.8.17
+  OS: Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-glibc2.17
+
+Output dir: /mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_1_paired.fq']
+      right reads: ['/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_2_paired.fq']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+    Library number: 2, library type: single
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_1_unpaired.fq']
+      merged reads: not specified
+    Library number: 3, library type: single
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_2_unpaired.fq']
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset: 33
+  Corrected reads will be compressed
+Assembly parameters:
+  k: [21, 55, 85]
+  Repeat resolution is enabled
+  Mismatch careful mode is turned OFF
+  MismatchCorrector will be SKIPPED
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/tmp
+  Threads: 1
+  Memory limit (in Gb): 7
+

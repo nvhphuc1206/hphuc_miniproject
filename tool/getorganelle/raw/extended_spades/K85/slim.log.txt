@@ -1,0 +1,15 @@
+2023-07-21 15:38:47,018 - INFO: Slimming file 1/1: tool/getorganelle/raw/extended_spades/K85/assembly_graph.fastg
+2023-07-21 15:38:47,031 - INFO: Parsing input finished.
+2023-07-21 15:38:47,037 - INFO: Preparing fasta file finished.
+2023-07-21 15:38:47,038 - INFO: Executing BLAST to /home/hphuc/.GetOrganelle/LabelDatabase/animal_mt ...
+2023-07-21 15:38:47,038 - INFO: Executing BLAST ...
+2023-07-21 15:38:47,488 - INFO: Executing BLAST finished.
+2023-07-21 15:38:47,488 - INFO: Executing BLAST to /home/hphuc/.GetOrganelle/LabelDatabase/animal_mt finished.
+2023-07-21 15:38:47,498 - INFO: Parsing blast result finished.
+2023-07-21 15:38:47,500 - INFO: No enough coverage information found.
+2023-07-21 15:38:47,500 - INFO: Mapping names ...
+2023-07-21 15:38:47,503 - INFO: Mapping names finished.
+2023-07-21 15:38:47,504 - INFO: Generating slimmed file to /mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/K85/assembly_graph.fastg.extend-animal_mt.fastg
+2023-07-21 15:38:47,512 - INFO: Generating notation table to /mnt/d/hphuc_miniproject_organelleseq/tool/getorganelle/raw/extended_spades/K85/assembly_graph.fastg.extend-animal_mt.csv
+2023-07-21 15:38:47,513 - INFO: Slimming file 1/1: tool/getorganelle/raw/extended_spades/K85/assembly_graph.fastg finished!
+
