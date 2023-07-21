@@ -12,5 +12,8 @@ output_dir=$3
 # Create directory to save the results from fastqc for raw data
 mkdir -p $output_dir
 
+# Print the version of FastQC
+conda run -n fastqc fastqc --version
+
 # Run fastqc with raw data
 conda run -n fastqc fastqc $input1 $input2 -o $output_dir

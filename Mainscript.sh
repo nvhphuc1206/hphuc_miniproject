@@ -19,6 +19,8 @@ arg5=$10
 # 2.Running
 # Create directory to save the fastp results 
 mkdir -p $output_dir
+# Print the version of Fastp
+conda run -n fastp fastp --version
 # Run fastp with target arguments
 conda run -n fastp fastp \
 -i $input1 \

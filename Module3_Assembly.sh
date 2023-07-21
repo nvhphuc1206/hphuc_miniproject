@@ -9,6 +9,8 @@ input2=$2
 output_dir=$3
 
 # 2.Running
+# Print the version of GetOrganelle
+conda run -n getorganelle get_organelle_from_reads.py -v
 # Create directory to save the assembly results and run getorganelle
 conda run -n getorganelle get_organelle_from_reads.py \
 -1 $input1 \
