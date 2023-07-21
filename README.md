@@ -60,9 +60,9 @@ get_organelle_config.py --add animal_mt
 ```sh 
 bash Module1_QC.sh <input1> <input2> <output_directory>
 ```
-- `input1`: path to first input file
-- `input2`: path to second input file
-- `output_directory`: path to where you want to store the results
+    - `input1`: path to first input file
+    - `input2`: path to second input file
+    - `output_directory`: path to where you want to store the results
 Noted: <input1> <input2> <output_directory> must be entered in the correct order.
 - Example:
 ```sh 
