@@ -16,7 +16,7 @@ The pipeline includes 6 modules:
 - Module 5: Assembly sequence annotation (MITOS)
 - Module 6: Identify target species (MEGA,BLAST)
 
-
+---
 ## Table of Contents:
  - [Description](#description)
  - [Table of Contents](#table-of-contents)
@@ -30,7 +30,7 @@ The pipeline includes 6 modules:
     - [Module 6](#module-6-identify-target-species-megablast)
  - [Structure of repository](#structure-of-repository)
 
-
+---
 ## Requirements:
 - Conda installation (Download conda according to the instructions from the link below, if you already have conda, skip this step)
 ```sh 
@@ -49,6 +49,7 @@ bash create_env.sh
 conda activate getorganelle
 get_organelle_config.py --add animal_mt
 ```
+
 ---
 ## Usage:
 
@@ -68,8 +69,7 @@ bash Module1_QC.sh <input1> <input2> <output_directory>
 bash Module1_QC.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/fastqc/raw/
 ```
 - Output will be saved in `output_directory` and the resulting file we are interested in has the extension `.html
-
-
+  
 ### Module 2: Trimming and filtering sequencing data by Fastp
 - `Module2_Filtering.sh` is used to trim and filter sequencing paired-end reads (Fastp) and re-quality-control of filtered results (FastQC)
 ```sh 
@@ -169,6 +169,7 @@ bash Mainscript.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.
 ```
 - Noted: An easier way to run the script is that you can go directly to the `*.sh` files and change the `$1,2,3,...` to the objects you want.
 
+---
 ## Structure of repository:
 ```sh
 hphuc_miniproject_organelleseq
