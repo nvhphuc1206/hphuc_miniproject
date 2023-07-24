@@ -24,4 +24,4 @@ conda run -n fastqc fastqc --version
 # Run fastqc with raw data
 conda run -n fastqc fastqc $input1 $input2 -o $output_dir
 
-echo "Complete Module 1"
+echo "Complete Quality Control step"

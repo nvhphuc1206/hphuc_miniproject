@@ -25,4 +25,4 @@ conda run -n getorganelle get_organelle_from_reads.py \
 -F animal_mt \
 -R 10
 
-echo "Complete Module 3"
+echo "Complete Assembly step"

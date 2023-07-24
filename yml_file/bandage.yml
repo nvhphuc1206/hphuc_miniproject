@@ -1,0 +1,48 @@
+name: bandage
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - bandage=0.8.1=hb59a952_0
+  - ca-certificates=2023.05.30=h06a4308_0
+  - dbus=1.13.18=hb2f20db_0
+  - expat=2.4.9=h6a678d5_0
+  - fontconfig=2.14.1=h52c9d5c_1
+  - freetype=2.12.1=h4a9f257_0
+  - glib=2.69.1=he621ea3_2
+  - gst-plugins-base=1.14.1=h6a678d5_1
+  - gstreamer=1.14.1=h5eee18b_1
+  - icu=58.2=he6710b0_3
+  - jpeg=9e=h5eee18b_1
+  - krb5=1.20.1=h143b758_1
+  - libclang=10.0.1=default_hb85057a_2
+  - libedit=3.1.20221030=h5eee18b_0
+  - libevent=2.1.12=hdbd6064_1
+  - libffi=3.4.4=h6a678d5_0
+  - libgcc-ng=11.2.0=h1234567_1
+  - libgomp=11.2.0=h1234567_1
+  - libllvm10=10.0.1=hbcb73fb_5
+  - libpng=1.6.39=h5eee18b_0
+  - libpq=12.15=hdbd6064_1
+  - libstdcxx-ng=11.2.0=h1234567_1
+  - libuuid=1.41.5=h5eee18b_0
+  - libxcb=1.15=h7f8727e_0
+  - libxkbcommon=1.0.1=hfa300c1_0
+  - libxml2=2.9.14=h74e7548_0
+  - lz4-c=1.9.4=h6a678d5_0
+  - ncurses=6.4=h6a678d5_0
+  - nspr=4.35=h6a678d5_0
+  - nss=3.89.1=h6a678d5_0
+  - openssl=3.0.9=h7f8727e_0
+  - pcre=8.45=h295c915_0
+  - qt=5.15.9=h06a4308_0
+  - qt-main=5.15.2=h327a75a_7
+  - qt-webengine=5.15.9=hd2b0992_4
+  - readline=8.2=h5eee18b_0
+  - sqlite=3.41.2=h5eee18b_0
+  - xz=5.4.2=h5eee18b_0
+  - zlib=1.2.13=h5eee18b_0
+  - zstd=1.5.5=hc292b87_0
+prefix: /home/hphuc/anaconda3/envs/bandage
