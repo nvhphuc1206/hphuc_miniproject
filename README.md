@@ -1,6 +1,6 @@
 # Mini Project: MITOCHONDRIAL GENOME ANALYSIS
 
-## **Description**:
+## Description:
 This repository is build to analyze sequencing data then assemble and analyze the mitochondrial genome through the following main steps:
 - Quality control for sequencing data
 - Trimming and filtering sequencing data (if needed)
