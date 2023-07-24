@@ -1,9 +1,7 @@
 # Mini Project: MITOCHONDRIAL GENOME ANALYSIS
 
 ## Description:
-Genomic DNA of a wild pig was sequenced by researcher B using Illumina platform. The researcher 
-is interested in studying the mitochondrial genome sequence of the wild pig. This repository is build
-for analyzing these sequenced data and responding to the questions listed below.
+This repository is build to analyze sequencing data then assemble and analyze the mitochondrial genome through the following main steps:
 - Quality control for sequencing data
 - Trimming and filtering sequencing data (if needed)
 - De novo assembly of the mitochondrial genome 
@@ -116,16 +114,32 @@ bash Module3_Assembly.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_
 
 
 ### Module 4: Quality control for assembly result by Bandage
-- Bandage (a Bioinformatics Application for Navigating De novo Assembly Graphs Easily) is a tool for visualizing assembly graphs with connections. 
-- Instructions for downloading and using Bandage can be consulted from the 2 links below:
-    - `http://rrwick.github.io/Bandage/`
-    - `https://github.com/rrwick/Bandage/wiki/Getting-started`
+- `Module4_Visualize_assembly.sh` is used for visualizing the assembly graph by Bandage to evaluate the De novo assembly of the mitochondrial genome.
+```sh 
+bash Module4_Visualize_assembly.sh <input> <output_directory>
+```
+- Therein:
+    - `input`: path to assembly graph file `.fastg, .gfa`
+    - `output_directory`: path to where you want to store the Bandage result
+- Noted: `input` `output_directory` must be entered in the correct order. In addition, you can change the variables directly by going to the `*.sh` file and changing the `$1,2,3,...`
+- Example:
+```sh 
+bash Module4_Visualize_assembly.sh ~/miniproject/tool/getorganelle/raw_read/extended_spades/assembly_graph.fastg ~/miniproject/tool/bandage/test
+```
+- Key output files of Bandage will be saved in `output_directory` as `visulized_graph.png`. Or you can run Bandage directly with the command.
+```sh
+conda activate bandage
+Bandage
+```
 
 
-### Module 5: Assembly sequence annotation by MITOS
+### Module 5: Assembly sequence annotation by MITOS, GeSeq
 - MITOS is a web server for the automatic annotation of metazoan mitochondrial genomes. In this project I will use MITOS web server because of time limit and problem while standing alone this tool. Instructions for downloading and using MITOS can be consulted from the 2 links below:
     - `http://mitos2.bioinf.uni-leipzig.de/index.py`
     - `https://gitlab.com/Bernt/MITOS`
+
+- GeSeq is a web-based tool for the rapid and accurate annotation of organellar genomes, in particular chloroplast genomes. It uses a combination of homology-based and de novo methods to identify genes and other features in organellar genomes. To use GeSeq you can enter the link below:
+    - `https://chlorobox.mpimp-golm.mpg.de/geseq.html`
 
 
 ### Module 6: Identify target species MEGA,BLAST
@@ -137,9 +151,9 @@ bash Module3_Assembly.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_
 
 
 ### Mainscript: The script perform cutting, quality control and assembly steps
-- The script `Mainscript.sh` will perform trimming (Fastp), then do evaluation (FastQC) and perform assembly from the trimming file.
+- The script `Mainscript.sh` will perform trimming (Fastp), then do evaluation (FastQC) and perform assembly (GetOrganell) from the trimming file as well as provide the `.png` file of assembly graph by (Bandage).
 ```sh 
-bash Mainscript.sh <input1> <input2> <output_directory> <quality_control_output_directory> <assembly_output_directory> <argument1> <argument2> <argument3> <argument4> <argument5>
+bash Mainscript.sh <input1> <input2> <output_directory> <quality_control_output_directory> <assembly_output_directory> <bandage_output_directory> <argument1> <argument2> <argument3> <argument4> <argument5>
 ```
 - Therein:
     - `input1`: path to first input target-trimmed file
@@ -147,6 +161,7 @@ bash Mainscript.sh <input1> <input2> <output_directory> <quality_control_output_
     - `output_directory`: path to where you want to store the trimming results
     - `quality_control_output_directory`: path to where you want to store the FastQC reports for the trimming results. 
     - `assembly_output_directory`: path to where you want to store the assembly result
+    - `bandage_output_directory`: path to where you want to store the result of visualizing assembly graph
     - `argument`: parameters you want to filter data as on module 2 introduced
 - Example:
 ```sh 
