@@ -169,18 +169,41 @@ bash Mainscript.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.
 ```
 - Noted: An easier way to run the script is that you can go directly to the `*.sh` files and change the `$1,2,3,...` to the objects you want.
 
-## Citation:
-- https://github.com/s-andrews/FastQC
-
-- Shifu Chen. 2023. Ultrafast one-pass FASTQ data preprocessing, quality control, and deduplication using fastp. iMeta 2: e107. https://doi.org/10.1002/imt2.107
-
-- Shifu Chen, Yanqing Zhou, Yaru Chen, Jia Gu; fastp: an ultra-fast all-in-one FASTQ preprocessor, Bioinformatics, Volume 34, Issue 17, 1 September 2018, Pages i884–i890, https://doi.org/10.1093/bioinformatics/bty560
-
-- SPAdes: [Bankevich, A., S. Nurk, D. Antipov, A. A. Gurevich, M. Dvorkin, A. S. Kulikov, V. M. Lesin, S. I. Nikolenko, S. Pham, A. D. Prjibelski, A. V. Pyshkin, A. V. Sirotkin, N. Vyahhi, G. Tesler, M. A. Alekseyev and P. A. Pevzner. 2012. SPAdes: a new genome assembly algorithm and its applications to single-cell sequencing. Journal of Computational Biology 19: 455-477.](https://www.liebertpub.com/doi/abs/10.1089/cmb.2012.0021)
-
-- Bowtie2: [Langmead, B. and S. L. Salzberg. 2012. Fast gapped-read alignment with Bowtie 2. Nature Methods 9: 357-359.](https://www.nature.com/articles/nmeth.1923)
-
-- BLAST+: [Camacho, C., G. Coulouris, V. Avagyan, N. Ma, J. Papadopoulos, K. Bealer and T. L. Madden. 2009. BLAST+: architecture and applications. BMC Bioinformatics 10: 421.](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-421)
-
-- Bandage: [Wick, R. R., M. B. Schultz, J. Zobel and K. E. Holt. 2015. Bandage: interactive visualization of de novo genome assemblies. Bioinformatics 31: 3350-3352.](https://academic.oup.com/bioinformatics/article/31/20/3350/196114)
-
+## Structure of repository:
+```sh
+hphuc_miniproject_organelleseq
+├── Mainscript.sh
+├── Module1_QC.sh
+├── Module2_Filtering.sh
+├── Module3_Assembly.sh
+├── Module4_Visualize_assembly.sh
+├── README.md
+├── create_env.sh
+├── database
+│   ├── Suidae cytb database
+│   ├── Suidae database
+│   └── Sus scrofa cytb database
+├── raw_data
+│   ├── SRR1581065_1_sub.fastq.gz
+│   └── SRR1581065_2_sub.fastq.gz
+├── tool_results
+│   ├── bandage
+│   ├── fastp
+│   ├── fastqc
+│   ├── geseq
+│   ├── getorganelle
+│   ├── mega
+│   ├── megahit
+│   ├── mitos
+│   ├── spades
+│   └── trimmomatic
+└── yml_file
+    ├── bandage.yml
+    ├── fastp.yml
+    ├── fastqc.yml
+    ├── getorganelle.yml
+    ├── megahit.yml
+    ├── spades.yml
+    ├── trimmomatic.yml
+    └── yaml.sh
+```
