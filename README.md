@@ -39,6 +39,7 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 - Clone this repository
 ```sh
 git clone https://github.com/nvhphuc1206/miniproject.git
+cd miniproject
 ```
 - Create the necessary environments for the entire project in conda from .yml
 ```sh
@@ -173,7 +174,7 @@ bash Mainscript.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.
 ---
 ## Structure of repository:
 ```sh
-hphuc_miniproject_organelleseq
+mini_project
 ├── Mainscript.sh
 ├── Module1_QC.sh
 ├── Module2_Filtering.sh
