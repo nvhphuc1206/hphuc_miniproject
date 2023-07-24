@@ -34,11 +34,11 @@ conda run -n fastp fastp \
 -I $input2 \
 -o $output1 \
 -O $output2 \
-$arg5 \
-$arg6 \
-$arg7 \
-$arg8 \
-$arg9
+$arg1 \
+$arg2 \
+$arg3 \
+$arg4 \
+$arg5
 
 
 ## FastQC 
