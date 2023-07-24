@@ -151,7 +151,7 @@ Bandage
 
 
 ### Mainscript: The script perform cutting, quality control and assembly steps
-- The script `Mainscript.sh` will perform trimming (Fastp), then do evaluation (FastQC) and perform assembly (GetOrganell) from the trimming file as well as provide the `.png` file of assembly graph by (Bandage).
+- The script `Mainscript.sh` will perform trimming (Fastp), then do evaluation (FastQC) and perform assembly (GetOrganelle) from the trimming file as well as provide the image file of assembly graph by (Bandage).
 ```sh 
 bash Mainscript.sh <input1> <input2> <output_directory> <quality_control_output_directory> <assembly_output_directory> <bandage_output_directory> <argument1> <argument2> <argument3> <argument4> <argument5>
 ```
