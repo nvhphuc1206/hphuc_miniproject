@@ -14,7 +14,7 @@ The pipeline includes 6 modules:
 - Module 3: De novo assembly [GetOrganelle](https://github.com/Kinggerm/GetOrganelle)
 - Module 4: Quality control for assembly result [Bandage](https://github.com/rrwick/Bandage)
 - Module 5: Assembly sequence annotation [MITOS](http://mitos2.bioinf.uni-leipzig.de/index.py) and [GeSeq](https://chlorobox.mpimp-golm.mpg.de/geseq.html)
-- Module 6: Identify target species (MEGA,BLAST)
+- Module 6: Identify target species [MEGA](https://www.megasoftware.net/) and [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
 
 ---
 ## Table of Contents:
