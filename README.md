@@ -28,7 +28,7 @@ The pipeline includes 6 modules:
     - [Module 4](#module-4-quality-control-for-assembly-result-by-bandage)
     - [Module 5](#module-5-assembly-sequence-annotation-by-mitos)
     - [Module 6](#module-6-identify-target-species-megablast)
- - [Citation](#citation)
+ - [Structure of repository](#structure-of-repository)
 
 
 ## Requirements:
@@ -49,7 +49,7 @@ bash create_env.sh
 conda activate getorganelle
 get_organelle_config.py --add animal_mt
 ```
-
+---
 ## Usage:
 
 ### Module 1: Quality control by FastQC
