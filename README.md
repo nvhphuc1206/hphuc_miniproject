@@ -71,8 +71,6 @@ bash Module1_QC.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.
 - Output will be saved in `output_directory` and the resulting file we are interested in has the extension `.html
 
 
-
-
 ### Module 2: Trimming and filtering sequencing data by Fastp
 - `Module2_Filtering.sh` is used to trim and filter sequencing paired-end reads (Fastp) and re-quality-control of filtered results (FastQC)
 ```sh 
