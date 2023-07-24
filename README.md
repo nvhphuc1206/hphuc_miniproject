@@ -72,7 +72,7 @@ bash Module1_QC.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.
 
 
 ### Module 2: Trimming and filtering sequencing data by Fastp
-- `Module2_Filtering.sh` is used to trim and filter sequencing paired-end reads [Fastp](https://github.com/OpenGene/fastp) and re-quality-control of filtered results [FastQC](https://github.com/s-andrews/FastQC)
+- `Module2_Filtering.sh` is used to trim and filter sequencing paired-end reads by [Fastp](https://github.com/OpenGene/fastp) and re-quality-control of filtered results by [FastQC](https://github.com/s-andrews/FastQC)
 ```sh 
 bash Module2_Filtering.sh <input1> <input2> <output_directory> <quality_control_output_directory> <argument1> <argument2> <argument3> <argument4> <argument5>
 ```
@@ -94,7 +94,7 @@ bash Module2_Filtering.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065
 
 
 ### Module 3: De novo assembly of the mitochondrial genome by GetOrganelle
-- `Module3_Assembly.sh` is used for De novo assembly of the mitochondrial genome [GetOrganelle](https://github.com/Kinggerm/GetOrganelle)
+- `Module3_Assembly.sh` is used for De novo assembly of the mitochondrial genome through [GetOrganelle](https://github.com/Kinggerm/GetOrganelle)
 ```sh 
 bash Module3_Assembly.sh <input1> <input2> <output_directory>
 ```
@@ -135,11 +135,11 @@ Bandage
 
 
 ### Module 5: Assembly sequence annotation by MITOS, GeSeq
-- MITOS is a web server for the automatic annotation of metazoan mitochondrial genomes. In this project I will use MITOS web server because of time limit and problem while standing alone this tool. Instructions for downloading and using MITOS can be consulted from the 2 links below:
+- [MITOS](http://mitos2.bioinf.uni-leipzig.de/index.py) is a web server for the automatic annotation of metazoan mitochondrial genomes. In this project I will use MITOS web server because of time limit and problem while standing alone this tool. Instructions for downloading and using MITOS can be consulted from the 2 links below:
     - `http://mitos2.bioinf.uni-leipzig.de/index.py`
     - `https://gitlab.com/Bernt/MITOS`
 
-- GeSeq is a web-based tool for the rapid and accurate annotation of organellar genomes, in particular chloroplast genomes. It uses a combination of homology-based and de novo methods to identify genes and other features in organellar genomes. To use GeSeq you can enter the link below:
+- [GeSeq](https://chlorobox.mpimp-golm.mpg.de/geseq.html) is a web-based tool for the rapid and accurate annotation of organellar genomes, in particular chloroplast genomes. It uses a combination of homology-based and de novo methods to identify genes and other features in organellar genomes. To use GeSeq you can enter the link below:
     - `https://chlorobox.mpimp-golm.mpg.de/geseq.html`
 
 
@@ -152,7 +152,7 @@ Bandage
 
 
 ### Mainscript: The script perform cutting, quality control and assembly steps
-- The script `Mainscript.sh` will perform trimming (Fastp), then do evaluation (FastQC) and perform assembly (GetOrganelle) from the trimming file as well as provide the image file of assembly graph by (Bandage).
+- The script `Mainscript.sh` will perform trimming ([Fastp](https://github.com/OpenGene/fastp)), then do evaluation ([FastQC](https://github.com/s-andrews/FastQC)) and perform assembly ([GetOrganelle](https://github.com/Kinggerm/GetOrganelle)) from the trimming file as well as provide the image file of assembly graph by ([Bandage](https://github.com/rrwick/Bandage)).
 ```sh 
 bash Mainscript.sh <input1> <input2> <output_directory> <quality_control_output_directory> <assembly_output_directory> <bandage_output_directory> <argument1> <argument2> <argument3> <argument4> <argument5>
 ```
