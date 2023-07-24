@@ -9,11 +9,11 @@ This repository is build to analyze sequencing data then assemble and analyze th
 - Identifying the species of the this wild pig using mitochondria genome sequence.
 
 The pipeline includes 6 modules:
-- Module 1: Quality control for raw data (FastQC)
-- Module 2: Trimming and filtering (Fastp)
-- Module 3: De novo assembly (GetOrganelle)
-- Module 4: Quality control for assembly result (Bandage)
-- Module 5: Assembly sequence annotation (MITOS)
+- Module 1: Quality control for raw data [FastQC](https://github.com/s-andrews/FastQC)
+- Module 2: Trimming and filtering [Fastp](https://github.com/OpenGene/fastp)
+- Module 3: De novo assembly [GetOrganelle](https://github.com/Kinggerm/GetOrganelle)
+- Module 4: Quality control for assembly result [Bandage](https://github.com/rrwick/Bandage)
+- Module 5: Assembly sequence annotation [MITOS](http://mitos2.bioinf.uni-leipzig.de/index.py) and [GeSeq](https://chlorobox.mpimp-golm.mpg.de/geseq.html)
 - Module 6: Identify target species (MEGA,BLAST)
 
 ---
@@ -55,7 +55,7 @@ get_organelle_config.py --add animal_mt
 
 ### Module 1: Quality control by FastQC
 - `Module1_QC.sh` is used to check quality of raw paired-end reads using fastqc tool and generate reports
-`.html`
+`.html` by [FastQC](https://github.com/s-andrews/FastQC)
 ```sh 
 bash Module1_QC.sh <input1> <input2> <output_directory>
 ```
@@ -72,7 +72,7 @@ bash Module1_QC.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.
 
 
 ### Module 2: Trimming and filtering sequencing data by Fastp
-- `Module2_Filtering.sh` is used to trim and filter sequencing paired-end reads (Fastp) and re-quality-control of filtered results (FastQC)
+- `Module2_Filtering.sh` is used to trim and filter sequencing paired-end reads [Fastp](https://github.com/OpenGene/fastp) and re-quality-control of filtered results [FastQC](https://github.com/s-andrews/FastQC)
 ```sh 
 bash Module2_Filtering.sh <input1> <input2> <output_directory> <quality_control_output_directory> <argument1> <argument2> <argument3> <argument4> <argument5>
 ```
@@ -94,7 +94,7 @@ bash Module2_Filtering.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065
 
 
 ### Module 3: De novo assembly of the mitochondrial genome by GetOrganelle
-- `Module3_Assembly.sh` is used for De novo assembly of the mitochondrial genome (GetOrganelle)
+- `Module3_Assembly.sh` is used for De novo assembly of the mitochondrial genome [GetOrganelle](https://github.com/Kinggerm/GetOrganelle)
 ```sh 
 bash Module3_Assembly.sh <input1> <input2> <output_directory>
 ```
@@ -115,7 +115,7 @@ bash Module3_Assembly.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_
 
 
 ### Module 4: Quality control for assembly result by Bandage
-- `Module4_Visualize_assembly.sh` is used for visualizing the assembly graph by Bandage to evaluate the De novo assembly of the mitochondrial genome.
+- `Module4_Visualize_assembly.sh` is used for visualizing the assembly graph by [Bandage](https://github.com/rrwick/Bandage) to evaluate the De novo assembly of the mitochondrial genome.
 ```sh 
 bash Module4_Visualize_assembly.sh <input> <output_directory>
 ```
