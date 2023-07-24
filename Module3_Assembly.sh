@@ -24,3 +24,5 @@ conda run -n getorganelle get_organelle_from_reads.py \
 -o $output_dir \
 -F animal_mt \
 -R 10
+
+echo "Complete Module 3"

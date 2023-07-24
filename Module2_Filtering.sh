@@ -47,3 +47,5 @@ fastqc_output_dir=$4
 
 # 2.Running 
 bash Module1_QC.sh $output1 $output2 $fastqc_output_dir
+
+echo "Complete Module 2"

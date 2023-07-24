@@ -35,6 +35,7 @@ $arg7 \
 $arg8 \
 $arg9
 
+echo "Complete trimming step"
 
 ########################  Re-Quality Control  ########################
 ## FastQC 
@@ -44,6 +45,7 @@ fastqc_output_dir=$4
 # 2.Running 
 bash Module1_QC.sh $output1 $output2 $fastqc_output_dir
 
+echo "Complete re-quality control step"
 
 ########################  Assembly  ########################
 ## GetOrganelle
@@ -52,3 +54,7 @@ assembly_output_dir=$5
 
 # 2.Running
 bash Module3_Assembly.sh $output1 $output2 $assembly_output_dir
+
+echo "Complete assembly step"
+
+echo "Pipeline is finished"
