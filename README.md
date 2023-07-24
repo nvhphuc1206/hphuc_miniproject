@@ -64,7 +64,7 @@ bash Module1_QC.sh <input1> <input2> <output_directory>
     - `input1`: path to first input file
     - `input2`: path to second input file
     - `output_directory`: path to where you want to store the results
-- Noted: `input1` `input2` `output_directory` must be entered in the correct order.
+- Noted: `input1` `input2` `output_directory` must be entered in the correct order. In addition, you can change the variables directly by going to the `*.sh` file and changing the `$1,2,3,...`
 - Example:
 ```sh 
 bash Module1_QC.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/fastqc/raw/
@@ -85,7 +85,7 @@ bash Module2_Filtering.sh <input1> <input2> <output_directory> <quality_control_
     - `argument`: parameters you want to filter data (--trim_poly_g, --overlap_len_require, ... ). You can refer to the parameters by
 `conda activate fastp
 fastp -h`
-- Noted: `input1` `input2` `output_directory` `quality_control_output_directory` `argument` must be entered in the correct order. Additionally, you can leave up to 5 filter parameters and if the parameter has spaces, leave it in `" "`
+- Noted: `input1` `input2` `output_directory` `quality_control_output_directory` `argument` must be entered in the correct order. Additionally, you can leave up to 5 filter parameters and if the parameter has spaces, leave it in `" "`. In addition, you can change the variables directly by going to the `*.sh` file and changing the `$1,2,3,...`
 - Example:
 ```sh 
 bash Module2_Filtering.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/fastp/test tool/fastqc/test "--cut_tail 10" "--length_limit 50"
@@ -103,7 +103,7 @@ bash Module3_Assembly.sh <input1> <input2> <output_directory>
     - `input1`: path to first input file
     - `input2`: path to second input file
     - `output_directory`: path to where you want to store the assembly result
-- Noted: `input1` `input2` `output_directory` must be entered in the correct order.
+- Noted: `input1` `input2` `output_directory` must be entered in the correct order. In addition, you can change the variables directly by going to the `*.sh` file and changing the `$1,2,3,...`
 - Example:
 ```sh 
 bash Module3_Assembly.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/getorganelle/raw
@@ -152,7 +152,7 @@ bash Mainscript.sh <input1> <input2> <output_directory> <quality_control_output_
 ```sh 
 bash Mainscript.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/fastp/test tool/fastqc/test tool/getorganelle/test
 ```
-
+- Noted: An easier way to run the script is that you can go directly to the `*.sh` files and change the `$1,2,3,...` to the objects you want.
 
 ## Citation:
 - https://github.com/s-andrews/FastQC

@@ -1,5 +1,10 @@
 #!/usr/bin/bash
 
+################################################################################
+######################     Trimming and filtering     ##########################
+################################################################################
+
+
 # This module is for step 2 and 3: Trimming and filtering sequencing data (Fastp) and quality control of filtered results (FastQC)
 
 ## Fastp 

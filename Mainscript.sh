@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+
+########################  Trimming and filtering  ########################
 ## Fastp 
 # 1.Variable
 # Input
@@ -34,6 +36,7 @@ $arg8 \
 $arg9
 
 
+########################  Re-Quality Control  ########################
 ## FastQC 
 # 1.Variable
 fastqc_output_dir=$4
@@ -42,8 +45,10 @@ fastqc_output_dir=$4
 bash Module1_QC.sh $output1 $output2 $fastqc_output_dir
 
 
+########################  Assembly  ########################
 ## GetOrganelle
 # 1.Variable
 assembly_output_dir=$5
+
 # 2.Running
 bash Module3_Assembly.sh $output1 $output2 $assembly_output_dir
