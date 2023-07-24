@@ -31,7 +31,7 @@ The pipeline includes 6 modules:
  - [Structure of repository](#structure-of-repository)
 
 ---
-## Requirements:
+## Installation and setup:
 - Conda installation (Download conda according to the instructions from the link below, if you already have conda, skip this step)
 ```sh 
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
