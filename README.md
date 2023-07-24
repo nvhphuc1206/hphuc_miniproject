@@ -168,7 +168,7 @@ bash Mainscript.sh <input1> <input2> <output_directory> <quality_control_output_
 ```sh 
 bash Mainscript.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.fastq.gz tool/fastp/test tool/fastqc/test tool/getorganelle/test
 ```
-- **Noted**: An easier way to run the script is that you can go directly to the `*.sh` files and change the `$1,2,3,...` to the objects you want.
+- **Noted**: `input1` `input2` `output_directory` `quality_control_output_directory` `assembly_output_directory` `bandage_output_directory` `argument` must be entered in the correct order or an easier way to run the script is that you can go directly to the `*.sh` files and change the `$1,2,3,...` to the objects you want. All the **output** will be save in the respectively `output_directory`.
 
 ---
 ## Structure of repository:
