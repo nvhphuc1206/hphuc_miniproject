@@ -1,4 +1,4 @@
-# Mini Project: MITOCHONDRIAL GENOME ANALYSIS
+# Mini Project - MITOCHONDRIAL GENOME ANALYSIS
 
 ## Description:
 This repository is build to analyze sequencing data then assemble and analyze the mitochondrial genome through the following main steps:
