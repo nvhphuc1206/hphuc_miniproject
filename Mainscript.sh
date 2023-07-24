@@ -37,6 +37,8 @@ $arg5
 
 echo "Complete trimming step"
 
+
+
 ########################  Re-Quality Control  ########################
 ## FastQC 
 # 1.Variable
@@ -46,6 +48,8 @@ fastqc_output_dir=$4
 bash Module1_QC.sh $output1 $output2 $fastqc_output_dir
 
 echo "Complete re-quality control step"
+
+
 
 ########################  Assembly  ########################
 ## GetOrganelle
