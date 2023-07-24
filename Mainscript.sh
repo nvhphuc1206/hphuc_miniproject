@@ -9,8 +9,8 @@ input1=$1
 input2=$2
 # Output directory and output
 output_dir=$3
-output1=$output_dir"/out_SRR1581065_1_sub.fastq.gz"
-output2=$output_dir"/out_SRR1581065_2_sub.fastq.gz"
+output1=$output_dir"/output1.fastq.gz"
+output2=$output_dir"/output2.fastq.gz"
 # Arguments filter
 arg1=$6
 arg2=$7

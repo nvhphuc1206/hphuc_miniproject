@@ -1,0 +1,720 @@
+LOCUS       91407-%28c            16561 bp     DNA     circular     24-JUL-2023
+DEFINITION  91407-%28c mitochondrion
+ACCESSION   91407-%28c
+SOURCE      mitochondrion 91407-%28c
+  ORGANISM  91407-%28c
+            91407-%28c;
+REFERENCE   1  (bases 1 to 16561)
+  AUTHORS   Tillich,M., Lehwark,P., Pellizzer,T., Ulbricht-Jones, E.S.,
+            Fischer, A., Bock, R. and Greiner,S.
+  TITLE     GeSeq - versatile and accurate annotation of organelle genomes
+  JOURNAL   Nucleic Acids Res. 45 (W1), W6-W11 (2017)
+   PUBMED   28486635
+COMMENT     GeSeq Version 2.03
+            Job           Pig Mitochondria Annotation
+            Subjob        91407-%28circular%29
+            Creator       anonymous
+            Program       BLAT v36x7
+                          blatxcutoff=25                 blatncutoff=85
+                          blatxmaxintron=750000          blatnmaxintron=0
+                          annotate_ir=false              shortmatches=false
+                          mpimpchlororefset=false
+                          ncbirefs=NC_023536.1, NC_000845.1, NC_026992.1,
+                          NC_008830.1, NC_043879.1, NC_023541.1, NC_020737.1,
+                          NC_024860.1, NC_039090.1, NC_014692.1, NC_012095.1
+            Program       HMMER 3.3.1 disabled
+            Program       ARAGORN v1.2.38 disabled
+            Program       ARWEN v1.2.3 disabled
+            Program       MFannot v1.34 disabled
+            Program       Chloë v0.1.0 disabled
+            Program       tRNAscan-SE v1.3.1 disabled
+            Program       tRNAscan-SE v2.0.6 disabled
+            Program       RNA Editing disabled
+            Submitted     24 Jul 2023 01:57:33 GMT
+            Started       24 Jul 2023 01:57:37 GMT
+            Finished      24 Jul 2023 01:57:38 GMT
+FEATURES             Location/Qualifiers
+     source          1..16561
+                     /organism="91407-%28c"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+     gene            342..411
+                     /gene="trnF-GAA | trnF"
+                     /info="blatN_hit trnF-GAA_NC_026992.1, position 1 - 70,
+                     psl score 97.2, coverage 100.00%, match 97.14%; blatN_hit
+                     trnF_NC_014692.1, position 1 - 70, psl score 100.0,
+                     coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            342..411
+                     /gene="trnF-GAA | trnF"
+                     /annotator="blatN"
+     gene            412..1372
+                     /gene="rrn12"
+                     /info="blatN_hit rrn12_NC_039090.1, position 1 - 958, psl
+                     score 98.8, coverage 100.31%, match 99.27%"
+                     /annotator="blatN"
+     rRNA            412..1372
+                     /gene="rrn12"
+                     /annotator="blatN"
+     gene            1373..1440
+                     /gene="trnV-UAC | trnV"
+                     /info="blatN_hit trnV-UAC_NC_026992.1, position 1 - 68,
+                     psl score 97.1, coverage 100.00%, match 97.06%; blatN_hit
+                     trnV_NC_014692.1, position 1 - 68, psl score 100.0,
+                     coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            1373..1440
+                     /gene="trnV-UAC | trnV"
+                     /annotator="blatN"
+     gene            1439..3010
+                     /gene="rrn16"
+                     /info="blatN_hit rrn16_NC_026992.1, position 1 - 1572,
+                     psl score 99.3, coverage 100.00%, match 99.24%"
+                     /annotator="blatN"
+     rRNA            1439..3010
+                     /gene="rrn16"
+                     /annotator="blatN"
+     gene            3011..3085
+                     /gene="trnL | trnL-UAA | trnL-YAA"
+                     /info="blatN_hit trnL_NC_043879.1, position 1 - 75, psl
+                     score 98.7, coverage 100.00%, match 98.67%; blatN_hit
+                     trnL-UAA_NC_026992.1, position 1 - 75, psl score 100.0,
+                     coverage 100.00%, match 100.00%; blatN_hit
+                     trnL-YAA_NC_020737.1, position 1 - 75, psl score 100.0,
+                     coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            3011..3085
+                     /gene="trnL | trnL-UAA | trnL-YAA"
+                     /annotator="blatN"
+     gene            3088..4042
+                     /gene="ND1"
+                     /info="blatX_hit ND1_NC_014692.1, position 1 - 955, psl
+                     score 100.0, coverage 100.00%, match 100.00%"
+                     /annotator="blatX"
+     CDS             3088..4042
+                     /gene="ND1"
+                     /annotator="blatX"
+     gene            4043..4111
+                     /gene="trnI-GAU | trnI"
+                     /info="blatN_hit trnI-GAU_NC_026992.1, position 1 - 69,
+                     psl score 100.0, coverage 100.00%, match 100.00%;
+                     blatN_hit trnI_NC_020737.1, position 1 - 69, psl score
+                     100.0, coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            4043..4111
+                     /gene="trnI-GAU | trnI"
+                     /annotator="blatN"
+     gene            complement(4109..4181)
+                     /gene="trnQ-UUG | trnQ"
+                     /info="blatN_hit trnQ-UUG_NC_026992.1, position 1 - 73,
+                     psl score 100.0, coverage 100.00%, match 100.00%;
+                     blatN_hit trnQ_NC_039090.1, position 1 - 73, psl score
+                     100.0, coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            complement(4109..4181)
+                     /gene="trnQ-UUG | trnQ"
+                     /annotator="blatN"
+     gene            4183..4252
+                     /gene="trnM-CAU | trnM"
+                     /info="blatN_hit trnM-CAU_NC_026992.1, position 1 - 70,
+                     psl score 100.0, coverage 100.00%, match 100.00%;
+                     blatN_hit trnM_NC_039090.1, position 1 - 70, psl score
+                     100.0, coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            4183..4252
+                     /gene="trnM-CAU | trnM"
+                     /annotator="blatN"
+     gene            4253..5294
+                     /gene="ND2"
+                     /info="blatX_hit ND2_NC_014692.1, position 1 - 1042, psl
+                     score 99.9, coverage 100.00%, match 99.81%"
+                     /annotator="blatX"
+     CDS             4253..5294
+                     /gene="ND2"
+                     /annotator="blatX"
+     gene            5295..5362
+                     /gene="trnW-UCA | trnW"
+                     /info="blatN_hit trnW-UCA_NC_026992.1, position 1 - 68,
+                     psl score 97.1, coverage 100.00%, match 97.06%; blatN_hit
+                     trnW_NC_014692.1, position 1 - 68, psl score 100.0,
+                     coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            5295..5362
+                     /gene="trnW-UCA | trnW"
+                     /annotator="blatN"
+     gene            complement(5369..5436)
+                     /gene="trnA-UGC | trnA"
+                     /info="blatN_hit trnA-UGC_NC_026992.1, position 1 - 68,
+                     psl score 98.6, coverage 100.00%, match 98.53%; blatN_hit
+                     trnA_NC_014692.1, position 1 - 68, psl score 100.0,
+                     coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            complement(5369..5436)
+                     /gene="trnA-UGC | trnA"
+                     /annotator="blatN"
+     gene            complement(5438..5512)
+                     /gene="trnN-GUU | trnN"
+                     /info="blatN_hit trnN-GUU_NC_026992.1, position 1 - 75,
+                     psl score 100.0, coverage 100.00%, match 100.00%;
+                     blatN_hit trnN_NC_043879.1, position 1 - 75, psl score
+                     100.0, coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            complement(5438..5512)
+                     /gene="trnN-GUU | trnN"
+                     /annotator="blatN"
+     gene            complement(5545..5610)
+                     /gene="trnC-GCA | trnC"
+                     /info="blatN_hit trnC-GCA_NC_026992.1, position 1 - 66,
+                     psl score 100.0, coverage 100.00%, match 100.00%;
+                     blatN_hit trnC_NC_043879.1, position 1 - 66, psl score
+                     100.0, coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            complement(5545..5610)
+                     /gene="trnC-GCA | trnC"
+                     /annotator="blatN"
+     gene            complement(5610..5675)
+                     /gene="trnY-GUA | trnY"
+                     /info="blatN_hit trnY-GUA_NC_026992.1, position 1 - 66,
+                     psl score 98.5, coverage 100.00%, match 98.48%; blatN_hit
+                     trnY_NC_014692.1, position 1 - 66, psl score 100.0,
+                     coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            complement(5610..5675)
+                     /gene="trnY-GUA | trnY"
+                     /annotator="blatN"
+     gene            5677..7221
+                     /gene="COX1"
+                     /info="blatX_hit COX1_NC_014692.1, position 1 - 1545, psl
+                     score 100.0, coverage 100.00%, match 99.94%"
+                     /annotator="blatX"
+     CDS             5677..7221
+                     /gene="COX1"
+                     /annotator="blatX"
+                     /translation="MFVNR*LYSTNHKDIGTLYLLFGA*AGIVGTALSLLIRAELGQP
+                     GTLLGDDQIYNVIVTAHAFVIIFFIVIPIMIGGFGN*LVPLIIGAPDMAFPRINNISF
+                     *LLPPSFLLLLASSIVEAGAGTG*TVYPPLAGNLAHAGASVDLTIFSLHLAGVSSILG
+                     AINFITTIINIKPPAMSQYQTPLFV*SVLITAVLLLLSLPVLAAGITILLTDRNLNTT
+                     FFDPAGGGDPILYQHLF*FFGHPEVYILILPGFGIISHIVTYYSGKKEPFGYIGIV*A
+                     IMSIGFLGFIVWAHHIFTVGIDVDTRAYFTSATIIIAIPTGVKVFS*LATLHGGNIK*
+                     SPAIL*ALGFIFLFTVGGLTGIVLANSSLDIVLHDTYYVVAHFHYVLSIGAVFAIIGG
+                     FVH*FPLFSGYTLNQA*AKIHFVIIFVGVNITFFPQHFLGLSGIPRRYSDYPDAYTA*
+                     NTISSIGSFISLTAVILIIFII*EAFASKREVSAVELTSTNLE*LHGCPPPYHTFEEP
+                     TYINLK"
+     gene            complement(7225..7293)
+                     /gene="trnK-CUU | trnS-UGA | trnS"
+                     /info="blatN_hit trnK-CUU_NC_023541.1, position 1 - 69,
+                     psl score 100.0, coverage 100.00%, match 100.00%;
+                     blatN_hit trnS-UGA_NC_026992.1, position 1 - 69, psl
+                     score 100.0, coverage 100.00%, match 100.00%; blatN_hit
+                     trnS_NC_043879.1, position 1 - 69, psl score 100.0,
+                     coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            complement(7225..7293)
+                     /gene="trnK-CUU | trnS-UGA | trnS"
+                     /annotator="blatN"
+     gene            complement(7225..7295)
+                     /gene="trnS-NGA"
+                     /info="blatN_hit trnS-NGA_NC_039090.1, position 1 - 71,
+                     psl score 100.0, coverage 100.00%, match 100.00%"
+                     /annotator="blatN"
+     tRNA            complement(7225..7295)
+                     /gene="trnS-NGA"
+                     /annotator="blatN"
+     gene            7301..7368
+                     /gene="trnD-GUC | trnD"
+                     /info="blatN_hit trnD-GUC_NC_026992.1, position 1 - 68,
+                     psl score 100.0, coverage 100.00%, match 100.00%;
+                     blatN_hit trnD_NC_039090.1, position 1 - 68, psl score
+                     100.0, coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            7301..7368
+                     /gene="trnD-GUC | trnD"
+                     /annotator="blatN"
+     gene            7369..8056
+                     /gene="COX2"
+                     /info="blatX_hit COX2_NC_014692.1, position 1 - 688, psl
+                     score 99.8, coverage 100.00%, match 99.71%"
+                     /annotator="blatX"
+     CDS             7369..8056
+                     /gene="COX2"
+                     /annotator="blatX"
+     gene            8057..8123
+                     /gene="trnL-AAG | trnK-UUU | trnK"
+                     /info="blatN_hit trnL-AAG_NC_023541.1, position 1 - 67,
+                     psl score 98.6, coverage 100.00%, match 98.51%; blatN_hit
+                     trnK-UUU_NC_026992.1, position 1 - 67, psl score 100.0,
+                     coverage 100.00%, match 100.00%; blatN_hit
+                     trnK_NC_039090.1, position 1 - 67, psl score 100.0,
+                     coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            8057..8123
+                     /gene="trnL-AAG | trnK-UUU | trnK"
+                     /annotator="blatN"
+     gene            8125..8328
+                     /gene="ATP8"
+                     /info="blatX_hit ATP8_NC_014692.1, position 1 - 204, psl
+                     score 100.0, coverage 100.00%, match 100.00%"
+                     /annotator="blatX"
+     CDS             8125..8328
+                     /gene="ATP8"
+                     /annotator="blatX"
+                     /translation="MPQLDTST*FITITSIIITLFILFQLKISNYSYPASPESTELKT
+                     QKHSTP*EIK*TKIYLPLSLPLR"
+     gene            8286..8966
+                     /gene="ATP6"
+                     /info="blatX_hit ATP6_NC_014692.1, position 1 - 681, psl
+                     score 99.8, coverage 100.00%, match 99.71%"
+                     /annotator="blatX"
+     CDS             8286..8966
+                     /gene="ATP6"
+                     /annotator="blatX"
+                     /translation="MNENLFASFIAPTIIGLPIVTLIIIFPSLLFPTPKRLINNRTIS
+                     IQQ*LIQITSKQIIAIHNQKGQT*SLILISLIIFIGSTNILGLLPHSFTPTTQLSINL
+                     GIAIPL*SATVFTGFRHKTKTSLAHFLPQGTPAPLIPMLVIIETISLFIQPVALAVRL
+                     TANITAGHLLIHLIGGATLALLNISTITAFITFTILILLTILEFAVALIQAYVFTLLV
+                     SLYLHDNT"
+     gene            8966..9749
+                     /gene="COX3"
+                     /info="blatX_hit COX3_NC_014692.1, position 1 - 784, psl
+                     score 100.0, coverage 100.00%, match 100.00%"
+                     /annotator="blatX"
+     CDS             8966..9749
+                     /gene="COX3"
+                     /annotator="blatX"
+     gene            9750..9818
+                     /gene="trnG-UCC | trnG"
+                     /info="blatN_hit trnG-UCC_NC_024860.1, position 1 - 69,
+                     psl score 98.6, coverage 100.00%, match 98.55%; blatN_hit
+                     trnG_NC_014692.1, position 1 - 69, psl score 100.0,
+                     coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            9750..9818
+                     /gene="trnG-UCC | trnG"
+                     /annotator="blatN"
+     gene            9819..10164
+                     /gene="ND3"
+                     /info="blatX_hit ND3_NC_014692.1, position 1 - 346, psl
+                     score 100.0, coverage 100.00%, match 100.00%"
+                     /annotator="blatX"
+     CDS             9819..10164
+                     /gene="ND3"
+                     /annotator="blatX"
+     gene            10166..10234
+                     /gene="trnR-UCG | trnR"
+                     /info="blatN_hit trnR-UCG_NC_026992.1, position 1 - 69,
+                     psl score 100.0, coverage 100.00%, match 100.00%;
+                     blatN_hit trnR_NC_039090.1, position 1 - 69, psl score
+                     100.0, coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            10166..10234
+                     /gene="trnR-UCG | trnR"
+                     /annotator="blatN"
+     gene            10235..10531
+                     /gene="ND4L"
+                     /info="blatX_hit ND4L_NC_014692.1, position 1 - 297, psl
+                     score 100.0, coverage 100.00%, match 100.00%"
+                     /annotator="blatX"
+     CDS             10235..10531
+                     /gene="ND4L"
+                     /annotator="blatX"
+                     /translation="VPLVYINIIIAFTIALAGLLIYRSHLISSLLCLEGMILSLFIIS
+                     TLIVLNTHFTLANIIPIILLVFAACEAALGLSLLVIVSNTYGTDYVQNLNLLQC"
+     gene            10525..11902
+                     /gene="ND4"
+                     /info="blatX_hit ND4_NC_014692.1, position 1 - 1378, psl
+                     score 99.8, coverage 100.00%, match 99.78%"
+                     /annotator="blatX"
+     CDS             10525..11902
+                     /gene="ND4"
+                     /annotator="blatX"
+     gene            11903..11971
+                     /gene="trnH-GUG | trnH"
+                     /info="blatN_hit trnH-GUG_NC_026992.1, position 1 - 69,
+                     psl score 100.0, coverage 100.00%, match 100.00%;
+                     blatN_hit trnH_NC_039090.1, position 1 - 69, psl score
+                     100.0, coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            11903..11971
+                     /gene="trnH-GUG | trnH"
+                     /annotator="blatN"
+     gene            11972..12030
+                     /gene="trnS-fragment | trnS-GCU | trnS-RCU"
+                     /info="blatN_hit trnS-fragment_NC_043879.1, position 1 -
+                     59, psl score 95.0, coverage 100.00%, match 94.92%,
+                     fragment match 94.92%; blatN_hit trnS-GCU_NC_026992.1,
+                     position 1 - 59, psl score 100.0, coverage 100.00%, match
+                     100.00%; blatN_hit trnS-RCU_NC_014692.1, position 1 - 59,
+                     psl score 100.0, coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            11972..12030
+                     /gene="trnS-fragment | trnS-GCU | trnS-RCU"
+                     /annotator="blatN"
+     gene            12031..12100
+                     /gene="trnL-NAG | trnL-UAG"
+                     /info="blatN_hit trnL-NAG_NC_014692.1, position 1 - 70,
+                     psl score 100.0, coverage 100.00%, match 100.00%;
+                     blatN_hit trnL-UAG_NC_026992.1, position 1 - 70, psl
+                     score 100.0, coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            12031..12100
+                     /gene="trnL-NAG | trnL-UAG"
+                     /annotator="blatN"
+     gene            12047..12100
+                     /gene="trnL-fragment"
+                     /info="blatN_hit trnL-fragment_NC_043879.1, position 17 -
+                     70, psl score 100.0, coverage 77.14%, match 77.14%,
+                     fragment match 100.00%"
+                     /annotator="blatN"
+     tRNA            12047..12100
+                     /gene="trnL-fragment"
+                     /annotator="blatN"
+     gene            12101..13921
+                     /gene="ND5"
+                     /info="blatX_hit ND5_NC_014692.1, position 1 - 1821, psl
+                     score 99.7, coverage 100.00%, match 99.62%"
+                     /annotator="blatX"
+     CDS             12101..13921
+                     /gene="ND5"
+                     /annotator="blatX"
+     gene            complement(13905..14432)
+                     /gene="ND6"
+                     /info="blatX_hit ND6_NC_014692.1, position 1 - 528, psl
+                     score 99.9, coverage 100.00%, match 99.81%"
+                     /annotator="blatX"
+     CDS             complement(13905..14432)
+                     /gene="ND6"
+                     /annotator="blatX"
+                     /translation="MTIYIAFILSTIFVIGFVGFSSKPSPIYGGLGLIVSGGVGCGIV
+                     LNFGGSFLGLMVFLIYLGGMLVVFGYTTAMATEMYPEV*VSNKTVFGAFVSGLIMEFC
+                     MVYYALKEEEVEIIFKFNGLGD*VIYDTGDSGFFSEEAMGIAALYSYGT*LVIVTG*S
+                     LLIGVVVIMEITRGN"
+     gene            complement(14433..14502)
+                     /gene="trnE"
+                     /info="blatN_hit trnE_NC_020737.1, position 1 - 70, psl
+                     score 98.6, coverage 100.00%, match 98.57%"
+                     /annotator="blatN"
+     tRNA            complement(14433..14502)
+                     /gene="trnE"
+                     /annotator="blatN"
+     gene            complement(14433..14501)
+                     /gene="trnE-UUC"
+                     /info="blatN_hit trnE-UUC_NC_026992.1, position 1 - 69,
+                     psl score 98.6, coverage 100.00%, match 98.55%"
+                     /annotator="blatN"
+     tRNA            complement(14433..14501)
+                     /gene="trnE-UUC"
+                     /annotator="blatN"
+     gene            14506..15645
+                     /gene="CYTB"
+                     /info="blatX_hit CYTB_NC_014692.1, position 1 - 1140, psl
+                     score 99.8, coverage 100.00%, match 99.74%"
+                     /annotator="blatX"
+     CDS             14506..15645
+                     /gene="CYTB"
+                     /annotator="blatX"
+     gene            15646..15713
+                     /gene="trnT-UGU | trnT"
+                     /info="blatN_hit trnT-UGU_NC_023541.1, position 1 - 68,
+                     psl score 100.0, coverage 100.00%, match 100.00%;
+                     blatN_hit trnT_NC_014692.1, position 1 - 68, psl score
+                     100.0, coverage 100.00%, match 100.00%; merged"
+                     /annotator="blatN"
+     tRNA            15646..15713
+                     /gene="trnT-UGU | trnT"
+                     /annotator="blatN"
+     gene            complement(15713..15777)
+                     /gene="trnP-UGG"
+                     /info="blatN_hit trnP-UGG_NC_026992.1, position 1 - 65,
+                     psl score 100.0, coverage 100.00%, match 100.00%"
+                     /annotator="blatN"
+     tRNA            complement(15713..15777)
+                     /gene="trnP-UGG"
+                     /annotator="blatN"
+     gene            complement(15714..15777)
+                     /gene="trnP"
+                     /info="blatN_hit trnP_NC_039090.1, position 1 - 64, psl
+                     score 100.0, coverage 100.00%, match 100.00%"
+                     /annotator="blatN"
+     tRNA            complement(15714..15777)
+                     /gene="trnP"
+                     /annotator="blatN"
+ORIGIN     
+        1 CGTACACGCG CATATAAGCA GGTAAATTAT TAGCTCATTC AAACCCCCCT TACCCCCCAT
+       61 TAAACTTATG CTCTACACAC CCTATAACGC CTTGCCAAAC CCCAAAAACA AAGCAGAGTG
+      121 TACAAATACA ATAAGCCTAA CTTACACTAA ACAACATTTA ACAACACAAA CCACCATATC
+      181 TTATAAAACA CTTACTTAAA TACGTGCTAC GAAAGCAGGC ACCTACCCCC CTAGATTTTT
+      241 ACGCCAATCT ACCACAAATA AGTTTAAAAT TACAACACAA TAACCTCCCA AAATATAAGC
+      301 ACCTATTTAA GCATACGCCC ACAATCTGAA TATAGCTTAT AGTTAATGTA GCTTAAATTA
+      361 TCAAAGCAAG GCACTGAAAA TGCCTAGATG GGCCTCACAG CCCCATAAAC ACACAGGTTT
+      421 GGTCCTGGCC TTTCTATTAA TTCTTAATAA AATTACACAT GCAAGTATCC GCGCCCCGGT
+      481 GAGAATGCCC TCCAGATCCT AAAGATCAAA AGGAGCAGGT ATCAAGCACA CCTATAACGG
+      541 TAGCTCATAA CGCCTTGCTC AACCACACCC CCACGGGAAA CAGCAGTGAT AAAAATTAAG
+      601 CCATGAACGA AAGTTTGACT AAGTTATATT AATTAGAGTT GGTAAATCTC GTGCCAGCCA
+      661 CCGCGGTCAT ACGATTAACC CAAATTAATA GATCCACGGC GTAAAGAGTG TTTAAGAAAA
+      721 AAAAACCACA ATAGAGTTAA ATTATAACTA AGCTGTAAAA AGCCCTAGTT AAAATAAAAT
+      781 AACCCACGAA AGTGACTCTA ATAATCCTGA CACACGATAG CTAGGACCCA AACTGGGATT
+      841 AGATACCCCA CTATGCCTAG CCCTAAACCC AAATAGTTAC ATAACAAAAC TATTCGCCAG
+      901 AGTACTACTC GCAACTGCCT AAAACTCAAA GGACTTGGCG GTGCTTCACA TCCACCTAGA
+      961 GGAGCCTGTT CTATAATCGA TAAACCCCGA TAGACCTTAC CAACCCTTGC CAATTCAGCC
+     1021 TATATACCGC CATCTTCAGC AAACCCTAAA AAGGAACAAT AGTAAGCACA ATCATAACAC
+     1081 ATAAAAACGT TAGGTCAAGG TGTAGCTTAT GGGTTGGAAA GAAATGGGCT ACATTTTCTA
+     1141 CATAAGAATA CCCACCATAC GAAAGTTTTT ATGAAACTAA AAACCAAAGG AGGATTTAGC
+     1201 AGTAAATCAA GAATAGAGTG CTTGATTGAA TAAGGCCATG AAGCACGCAC ACACCGCCCG
+     1261 TCACCCTCCT CAAGCATGTA GTAATAAAAA TAACCTATAT TCAATTACAC AACCATGCAA
+     1321 GAAGAGACAA GTCGTAACAA GGTAAGCATA CTGGAAAGTG TGCTTGGATT ACCAAAGCAT
+     1381 AGCTTAAACT AAAGCACCTA GTTTACACCT AGAAGATCCC ATAATATATG GGTACTTTGA
+     1441 ACCAAAGCTA GCTCAACATA CTAAACAAAT ACAAAAATAC ACCAAAATAA AATAAAACAT
+     1501 TCACCTAACA TTAAAGTATA GGAGATAGAA ATTTTTATCC TGACGCTATA GAGATAGTAC
+     1561 CGTAAGGGAA AGATGAAAGA ATAAAATAAA AGTAAAAAAA AGCAAAGATT ACCCCTTCTA
+     1621 CCTTTTGCAT AATGATTTAA CCAGAAAAAA TCTAACAAAG AGAACTTTAG CTAGATACCC
+     1681 CGAAACCAGA CGAGCTACCT ATGAGCAGTT TAAAAGAACC AACTCATCTA TGTGGCAAAA
+     1741 TAGTGAGAAG ACTTGTAGGT AGAGGTGAAA AGCCTAACGA GCCTGGTGAT AGCTGGTTGT
+     1801 CCGAGAAAGA ATTTTAGTTC AACCTTAAAA ATACCCCAAA AACCCTAAAT TCCAATGTAT
+     1861 TTTTAAGAGA TAGTCTAAAA AGGTACAGCT TTTTAGAAAC GGATACAACC TTGACTAGAG
+     1921 AGTAAAATCT TAATACTACC ATAGTAGGCC TAAAAGCAGC CATCAATTGA GAAAGCGTTA
+     1981 AAGCTCAACA AATTCACCAA CATAATCCCA AAAACTAATA ACAAACTCCT AGCCCAATAC
+     2041 CGGACTAATC TATTGAAACA TAGAAGCAAT AATGTTAATA TGAGTAACAA GAAGCCTTTC
+     2101 TCCTCGCACA CGCTTACATC AGTAACTAAT AATATACTGA TAATTAACAA TCAATAAACC
+     2161 AAAACAACAC TAAAGCGTTT ATTAATTATA TTGTTAACCC AACACAGGAG TGCACCAAGG
+     2221 AAAGATTAAA AGAAGTAAAA GGAACTCGGC AAACACAAAC CCCGCCTGTT TACCAAAAAC
+     2281 ATCACCTCTA GCATTACTAG TATTAGAGGC AATGCCTGCC CAGTGACACC AGTTTAACGG
+     2341 CCGCGGTATT CTGACCGTGC AAAGGTAGCA TAATCACTTG TTCTCCAAAT AAGGACTTGT
+     2401 ATGAATGGCC ACACGAGGGT TTTACTGTCT CTTACTTCCA ATCAGTGAAA TTGACCTTCC
+     2461 CGTGAAGAGG CGGGAATAAA AAAATAAGAC GAGAAGACCC TATGGAGCTT TAATTAACTA
+     2521 TTCCAAAAGT TAAACAATTC AACCACAAAG GGATAAAACA TAACTTAACA TGGACTAGCA
+     2581 ATTTCGGTTG GGGTGACCTC GGAGTACAAA AAACCCTCCG AGTGATTTTA ATCTAGACAA
+     2641 ACCAGTCAAA ATAACCATAA CATCACTTAT TGATCCAAAA TTTTGATCAA CGGAACAAGT
+     2701 TACCCTAGGG ATAACAGCGC AATCCTATTC TAGAGTTCCT ATCGACAATA GGGTTTACGA
+     2761 CCTCGATGTT GGATCAGGAC ACCCAAATGG TGCAACCGCT ATTAAAGGTT CGTTTGTTCA
+     2821 ACGATTAAAG TCCTACGTGA TCTGAGTTCA GACCGGAGCA ATCCAGGTCG GTTTCTATCT
+     2881 ATTATAAATT TCTCCCAGTA CGAAAGGACA AGAGAAATGG GACCAACCTC ACAAACGCGT
+     2941 CTCAGAGATA ATTAATGATA TAATCTTAAC CTAATTAACT CATAATAAAT CCAGCCCTAG
+     3001 AACAGGGCAC ATTAGGGTGG CAGAGACCGG TAATTGCGTA AAACTTAAAC CTTTATTACC
+     3061 AGAGGTTCAA CTCCTCTCCC TAATAGCATG TTCATAATTA ACATTCTAAG CCTAATCATT
+     3121 CCTATCCTAC TGGCCGTAGC ATTCCTCACC CTAGTAGAAC GAAAAGTACT AGGTTATATG
+     3181 CAACTACGAA AAGGACCCAA CGTTGTAGGC CCCTACGGCC TACTCCAACC CATCGCCGAT
+     3241 GCCCTAAAAC TATTCACCAA AGAACCCCTA CGACCAGCCA CATCCTCAAT CTCCATGTTC
+     3301 ATTATTGCAC CAATCCTAGC CTTATCCCTA GCACTAACAA TATGAGTTCC ACTACCAATA
+     3361 CCCTACCCTC TAATCAACAT AAATCTAGGA GTACTATTCA TGCTAGCCAT GTCAAGCCTA
+     3421 GCAGTCTATT CTATCCTATG ATCAGGATGA GCATCTAACT CAAAATACGC ACTCATCGGG
+     3481 GCCCTACGAG CAGTAGCCCA AACAATTTCA TATGAAGTAA CACTGGCAAT CATCCTACTA
+     3541 TCAGTGCTCC TAATAAATGG ATCATATACT CTATCCACCC TAATCACAAC ACAAGAGCAC
+     3601 ATTTGAATAA TCTTTACATC CTGACCCCTA GCCATAATAT GATTTATCTC AACCCTAGCA
+     3661 GAAACCAACC GAGCCCCGTT CGACCTTACA GAAGGAGAGT CAGAACTTGT ATCAGGCTTT
+     3721 AACGTAGAAT ATGCAGCCGG ACCTTTCGCC ATATTCTTCA TAGCAGAATA TGCCAACATC
+     3781 ATCATAATAA ATGCATTCAC AGCAATTCTC TTCCTAGGAG CATTCCACGA CCCACACACA
+     3841 TCAGAACTAT ATACAATCAA CTTCGTACTA AAAACACTCG CATTAACAAT CACCTTCCTA
+     3901 TGAATCCGAG CATCATACCC ACGATTCCGA TATGACCAAC TAATACATTT ACTATGAAAA
+     3961 AGCTTCCTGC CCCTAACACT AGCTCTATGT ATATGACACA TCTCACTCCC TATTATAACA
+     4021 GCAAGTATTC CCCCACAATC ATAGAAATAT GTCTGATAAA AGAGTTACTT TGATAGAGTA
+     4081 AAAAATAGAG GTTCAAACCC TCTTATTTCT AGAACAATAG GACTCGAACC TAAACCTGAG
+     4141 AATTCAAAAT TCTCCGTGCT ACCAAAATAC ACCACATTCT ACAGTAAGGT CAGCTAAGCT
+     4201 AAGCTATCGG GCCCATACCC CGAAAATGTT GGTTCATACC CTTCCCATAC TAATAAATCC
+     4261 CATTATCTAC ACTACCCTTA TCATAACAGT AATATCCGGA ACCATACTAG TAATAATCAG
+     4321 CTCACACTGA CTACTCATCT GAATCGGATT CGAAATAAAC CTATTAGCAA TAATCCCAGT
+     4381 ATTAATAAAA AATTTTAACC CACGAGCCAC AGAAGCAGCC ACAAAATATT TCCTAACACA
+     4441 AGCCACAGCC TCCATAATAC TAATAATAGC CATCATCATC AACCTCCTAT ATTCTGGCCA
+     4501 ATGGACCATT ACAAAAATAT TTAACCCAGT AGCAATAACA ATAATAACCC TGGCCCTAGC
+     4561 CATAAAACTA GGACTCTCAC CTTTCCACTT CTGAGTCCCA GAAGTAACCC AAGGCATTTC
+     4621 ACTACAAGCA GGCCTACTAT TACTAACATG ACAAAAACTA GCCCCATTAT CAGTACTATG
+     4681 CCAAATCTCA CAATCAATCA ACCCAAACCT AATATTAACT ATGGCCATAT TATCAATTTT
+     4741 AATCGGAGGG TGAGGAGGAC TAAACCAAAC CCAACTTCGA AAAATCATAG CATATTCATC
+     4801 AATCGCACAC ATAGGATGAA TGACAGCAGT ATTACCATAT AACACAACCA TAACAATCTT
+     4861 AAACCTACTA ATTTACATCA CAACAACACT AGCAATATTC ATACTATTAA TCCACAGCTC
+     4921 AGCAACCACA ACTTTATCCC TATCCCATAC ATGAAACAAG ATACCCATCA TCACAAGCCT
+     4981 AATAATAGTA ACCCTACTCT CAATAGGAGG CCTGCCTCCA CTATCAGGAT TTATACCAAA
+     5041 ATGAATAATC ATTCAAGAAA TAACAAAAAA TGAAAGCATC ATCATGCCAA CACTCATAGC
+     5101 AATAACAGCA CTGCTAAACC TCTATTTCTA CATACGACTA GCCTACTCCT CCTCACTGAC
+     5161 TATGTTCCCA TCCACCAATA ACATAAAAAT AAAATGACAA TTCGAACACA CAAAACAAAT
+     5221 AAAACTACTT CCCACAATAA TTGTATTATC GACACTAATC CTACCCATAA CACCAGCCCT
+     5281 CTCGTCCCTA AACTAGGAAT TTAGGTTAAC ACAGACCAAG AGCCTTCAAA GCTCTAAGTA
+     5341 AGTACAAAGT ACTTAACTCC TGAAAACCTA AGGACTGCAG GATTCATCCT ACATCAATTG
+     5401 AATGCAAATC AAACACTTTA ATTAAGCTAA ATCCTCACTA GATTGGTGGG ATTACATACC
+     5461 CACGAAACTT TTAGTTAACA GCTAAACACC CTAATCAACT GGCTTCAATC TACTTCTCCC
+     5521 GCCGCAGGAA AAAAAAGGCG GGAGAAGTCC CGGCAGAATT GAAGCTGCTT CTTTGAATTT
+     5581 GCAATTCAAC ATGACATTCA CCACGGAACT GGCAAAAAGA GGGCTTAACC TCTGTCTTTA
+     5641 GATTTACAGT CTAATGCTTA CTCAGCCATT TTACCTATGT TCGTAAATCG TTGACTATAC
+     5701 TCAACAAACC ACAAAGACAT CGGCACCCTG TACCTACTAT TTGGTGCCTG AGCAGGAATA
+     5761 GTGGGCACTG CCTTGAGCCT ACTAATTCGC GCTGAACTAG GTCAGCCCGG AACCCTACTT
+     5821 GGCGATGATC AAATCTATAA TGTAATTGTT ACAGCTCATG CCTTTGTAAT AATCTTCTTT
+     5881 ATAGTAATAC CCATTATGAT TGGGGGTTTT GGTAACTGAC TCGTACCGCT AATAATCGGA
+     5941 GCTCCCGATA TGGCCTTTCC ACGTATAAAC AACATAAGTT TCTGACTACT TCCACCATCC
+     6001 TTCCTATTAC TACTGGCATC CTCAATAGTA GAAGCCGGGG CGGGTACTGG ATGAACCGTA
+     6061 TACCCACCTT TAGCTGGAAA CTTAGCCCAT GCAGGAGCTT CAGTTGATCT AACAATTTTC
+     6121 TCCCTACACC TTGCAGGTGT ATCATCAATC CTAGGGGCTA TTAATTTCAT TACCACAATT
+     6181 ATTAACATAA AACCTCCCGC AATGTCTCAA TACCAAACAC CCCTGTTTGT CTGATCAGTA
+     6241 CTAATCACAG CCGTACTACT TCTACTATCC CTGCCAGTTC TAGCAGCTGG CATTACTATA
+     6301 CTACTGACAG ACCGCAACCT GAACACAACC TTTTTTGATC CAGCAGGTGG TGGAGACCCT
+     6361 ATCCTTTATC AACACTTGTT CTGATTTTTC GGACACCCAG AAGTATATAT TCTCATCTTA
+     6421 CCAGGGTTCG GAATAATCTC CCACATTGTA ACCTACTATT CAGGTAAAAA AGAACCATTT
+     6481 GGATATATAG GCATAGTATG AGCCATAATG TCCATTGGAT TCTTAGGTTT TATCGTATGG
+     6541 GCTCACCACA TATTCACCGT AGGAATAGAC GTGGATACCC GAGCATACTT TACATCTGCC
+     6601 ACAATAATCA TTGCTATTCC CACTGGAGTA AAAGTATTTA GTTGATTAGC TACCCTGCAC
+     6661 GGCGGCAATA TTAAATGATC ACCCGCAATA CTATGAGCTC TGGGCTTCAT CTTCCTATTC
+     6721 ACCGTAGGAG GTCTAACGGG CATTGTACTA GCTAACTCCT CCCTAGACAT TGTATTACAT
+     6781 GATACATATT ATGTAGTCGC ACACTTCCAC TATGTCTTAT CTATAGGAGC AGTGTTTGCC
+     6841 ATTATAGGGG GCTTTGTTCA CTGATTCCCC CTATTCTCCG GGTACACACT CAACCAAGCA
+     6901 TGAGCAAAAA TTCACTTTGT AATTATATTC GTAGGAGTAA ATATAACATT CTTTCCACAA
+     6961 CACTTTCTAG GACTATCCGG AATACCTCGA CGATACTCCG ATTATCCTGA CGCATACACA
+     7021 GCATGAAATA CTATTTCCTC AATAGGCTCA TTCATCTCAC TAACAGCAGT GATATTAATA
+     7081 ATCTTCATTA TCTGAGAAGC ATTTGCATCA AAACGAGAAG TATCTGCAGT AGAACTGACA
+     7141 AGCACAAACC TAGAATGACT ACACGGATGT CCTCCTCCCT ATCACACATT TGAAGAACCA
+     7201 ACATATATCA ACCTAAAATA AGCATAAGAA AGGAAGGAAT CGAACCCTCT CCCACTGGTT
+     7261 TCAAGCCAAC GTCATAACCA CTATGTCTTT CTCGATAATC GAGGTATTAG TAAAATATTA
+     7321 CATAACTTTG TCGAAGTTAT ATTATAGGTG AAAGCCCTAT ATGCCTCTAT GGCTTACCCT
+     7381 TTCCAACTAG GCTTCCAAGA CGCCACTTCA CCCATCATAG AAGAACTCCT ACACTTTCAC
+     7441 GATCACACCT TAATAATTGT ATTCTTAATC AGCTCTTTAG TGTTATATAT CATTTCACTT
+     7501 ATACTAACAA CAAAACTGAC ACACACTAGC ACAATGGATG CCCAAGAAGT AGAAACAATT
+     7561 TGAACAATCC TACCCGCTAT TATTTTAATT CTTATTGCCC TTCCATCATT ACGAATCCTT
+     7621 TATATAATAG ACGAAATTAA TAACCCAGCC TTAACCGTAA AAACCATAGG ACATCAATGA
+     7681 TACTGAAGCT ATGAGTATAC AGACTATGAA GACCTCACCT TTGACTCATA TATAATCCCC
+     7741 ACATCAGATC TTAAACCTGG AGAAATACGA CTACTAGAAG TAGACAATCG AGTTGTTCTG
+     7801 CCAATAGAAA TAACAATCCG AATATTAGTG TCCTCTGAAG ACGTACTACA CTCATGAGCT
+     7861 GTCCCATCCC TCGGTTTAAA AACAGATGCT ATCCCAGGAC GACTAAACCA AACAACTCTA
+     7921 ATATCCACAC GACCTGGCCT TTATTACGGA CAGTGCTCAG AAATCTGTGG ATCAAACCAC
+     7981 AGCTTCATGC CCATTGTACT TGAACTTGTC CCATTAAAGT ACTTCGAAAA ATGGTCAACA
+     8041 TCAATATTAA CAGGTTCATT GAGAAGCTAG TCAGCACTAA CCTTTTAAGT TAGAGATCGG
+     8101 GAGCCTAAAT CTCCCCTCAA TGGTATGCCA CAACTAGATA CATCTACATG ATTCATTACA
+     8161 ATTACATCAA TAATTATAAC ATTATTTATT TTATTCCAAC TAAAAATCTC AAACTACTCA
+     8221 TACCCAGCAA GCCCAGAATC AACCGAACTC AAAACTCAAA AACATAGCAC CCCTTGAGAA
+     8281 ATAAAATGAA CGAAAATCTA TTTGCCTCTT TCATTGCCCC TACGATAATA GGACTACCTA
+     8341 TTGTCACCTT AATTATTATA TTCCCAAGCT TACTATTCCC AACACCCAAA CGACTCATTA
+     8401 ATAACCGCAC AATCTCGATC CAACAATGAT TAATCCAAAT AACATCCAAA CAAATAATAG
+     8461 CTATTCACAA CCAAAAAGGC CAAACCTGAT CACTAATACT TATATCTCTA ATTATATTCA
+     8521 TTGGCTCAAC AAACATCCTA GGCCTACTAC CACACTCATT CACACCCACC ACACAACTAT
+     8581 CAATAAACCT GGGTATAGCA ATCCCCCTAT GATCAGCAAC CGTATTCACA GGATTCCGCC
+     8641 ATAAAACCAA AACATCACTA GCCCACTTTC TACCACAAGG AACACCCGCC CCATTAATTC
+     8701 CTATGCTCGT AATTATTGAA ACTATTAGCC TATTTATTCA ACCAGTAGCC CTAGCCGTAC
+     8761 GACTGACAGC CAACATTACA GCAGGGCACC TATTAATTCA TCTAATTGGA GGGGCCACAC
+     8821 TAGCACTACT CAACATCAGC ACTATAACAG CTTTTATCAC ATTTACTATC CTCATCCTAT
+     8881 TAACTATTCT TGAATTTGCA GTAGCTCTGA TCCAAGCTTA TGTGTTTACA CTGCTAGTAA
+     8941 GCTTATACCT ACACGACAAT ACATAATGAC CCACCAAACA CATGCATACC ACATAGTAAA
+     9001 CCCAAGCCCA TGACCACTTA CCGGAGCCCT ATCAGCCCTT TTAATAACAT CAGGCCTAAT
+     9061 TATATGATTC CACTTTAACT CTATACTCTT ACTATCTCTA GGACTATTAA CCAATACTTT
+     9121 GACAATATAC CAATGGTGAC GAGACATTAT TCGAGAAAGC ACTTTCCAAG GCCACCACAC
+     9181 ATCAGTCGTC CAAAAAGGCT TACGATACGG TATAATTTTA TTTATTATTT CCGAGGTTCT
+     9241 GTTCTTCACT GGATTCTTTT GAGCTTTCTA CCACTCAAGC CTAGCACCAA CACCCGAATT
+     9301 AGGAGGTTGC TGACCACCAA CAGGAATTCA CCCACTAAAC CCCCTAGAAG TACCCCTACT
+     9361 AAACACCTCA ATCCTCCTCG CCTCAGGAGT ATCCATTACC TGAGCCCATC ACAGCCTAAT
+     9421 AGAAGGGGAC CGAAAACACA TAATCCAAGC ACTATCCATC ACCATTGCAC TAGGCGTATA
+     9481 CTTCACCCTC CTCCAAGCCT CAGAATATTA CGAAGCACCA TTCACAATCT CCGACGGAGT
+     9541 GTATGGATCC ACTTTCTTTG TGGCTACAGG ATTTCACGGG TTGCACGTAA TCATCGGATC
+     9601 TACTTTCCTA GCAGTGTGCT TACTACGACA ACTAAAATTC CACTTCACAT CCAACCACCA
+     9661 CTTCGGCTTT GAAGCCGCAG CCTGATACTG ACACTTCGTA GATGTAGTTT GACTATTCCT
+     9721 TTACGTATCA ATCTATTGAT GAGGATCCTA CTCTTTTAGT ATTAAGCAGT ACAATTGACT
+     9781 TCCAATCAAT CAGTTTCGGT AAACTCCGAA AAAGAGTAAT AAATATTATA CTAACACTAT
+     9841 TCACAAACGT AACCCTAGCC TCCCTACTCG TACTAATCGC ATTCTGACTA CCCCAACTAA
+     9901 ACACATATTC AGAAAAAACA AGCCCATATG AATGTGGATT TGACCCCATA GGATCAGCAC
+     9961 GCCTCCCATT CTCAATAAAA TTTTTCCTAG TAGCCATTAC ATTTCTCCTT TTTGATCTAG
+    10021 AAATCGCCCT CCTCCTTCCC CTACCATGAG CATCCCAAAC AAACAATCTA AAAACAATAC
+    10081 TTACAATAGC ACTATTCCTT CTTACCCTAC TAGCAGCAAG CCTAGCATAC GAATGAACCC
+    10141 AAAAAGGCCT AGAATGAACA GAATATGATA ATTAGTTTAA AACAAAACAA ATGATTTCGA
+    10201 CTCATTAGAC TATGATTTAC TTCATAATTA TCAAGTGCCA TTAGTATACA TAAACATCAT
+    10261 TATAGCATTC ACGATTGCCC TTGCAGGGTT ACTTATATAT CGATCTCACT TAATATCTTC
+    10321 ACTACTATGC CTAGAAGGAA TGATATTATC ACTATTCATC ATATCGACTC TAATTGTCCT
+    10381 AAACACACAC TTCACCCTAG CTAACATAAT ACCCATTATT TTACTAGTGT TTGCAGCCTG
+    10441 CGAAGCTGCA CTGGGCCTAT CACTACTAGT AATAGTATCC AACACATACG GTACCGATTA
+    10501 CGTCCAAAAC TTAAACCTTT TACAATGCTA AAAATTATTA TCCCAACAAC AATACTACTA
+    10561 CCCATAACAT GAATATCTAA ACACAACATA ATCTGAATCA ATGCAACAGT ACATAGTCTC
+    10621 CTCATTAGCC TGATCAGTCT ATCCCTACTA AACCAACTAG GCGAAAACAG CCTTAATTTT
+    10681 TCCTTAACAT TCTTCTCCGA CTCACTATCA GCACCCCTAC TAGTTCTAAC CACATGACTC
+    10741 CTCCCCCTTA TACTAATAGC TAGCCAATCC CACCTATCAA AAGAAACCAC AACCCGAAAA
+    10801 AAACTATATA TTACCATACT AATCCTACTA CAACTATTCC TAATTATAAC CTTCACCGCC
+    10861 ACCGAACTAA TCTTATTCTA TATCCTATTC GAAGCAACAC TAGTACCCAC ACTAATCATC
+    10921 ATCACACGCT GAGGGAACCA AACAGAACGA CTCAATGCAG GACTTTATTT CCTATTCTAC
+    10981 ACCCTAGCAG GATCCCTACC ACTGCTAGTA GCACTAGTTT ATATCCAAAA CACCACAGGC
+    11041 TCACTAAACT TCTTAATTAT CCATTACTGA TCCCACCCAT TATCCAACTC TTGATCAAAC
+    11101 ATTTTTATAT GATTAGCATG CATCATAGCC TTCATAGTAA AAATACCTCT GTACGGACTC
+    11161 CATCTTTGAC TGCCAAAAGC CCATGTAGAA GCCCCTATTG CAGGTTCAAT AGTACTTGCA
+    11221 GCCGTACTGC TAAAACTCGG AGGCTATGGC ATAATGCGAA TCACTACTAT TCTAAACCCA
+    11281 CTAACAAACT ACATAGCCTA TCCATTCCTC ATGCTTTCCA TATGAGGTAT AATCATAACC
+    11341 AGCTCTATCT GCTTACGTCA AACCGACCTA AAATCCTTAA TCGCTTATTC ATCAGTAAGT
+    11401 CATATAGCAC TTGTAATCGT AGCAATCATA ATTCAAACCC CCTGAAGCTT CATAGGAGCC
+    11461 ACAGCTCTCA TAATTGCCCA CGGACTAACA TCCTCCATAC TATTCTGCCT AGCCAACACT
+    11521 AACTATGAAC GAGTACACAG CCGAACCATA ATCCTAGCCC GAGGACTGCA AACACTCCTA
+    11581 CCACTCATAG CAACATGATG ACTAATAGCA AGCCTCACAA ACCTAGCCCT ACCCCCATCC
+    11641 ATCAATCTAA TCGGAGAATT ATTTATCATC ACAGCATCAT TTTCATGATC CAACATCACA
+    11701 ATTATTCTCA TAGGAATAAA CATAATAATT ACAGCTCTCT ACTCTCTCTA CATACTAATT
+    11761 ATTACACAAC GAGGAAAATA CACCCACCAC ATTAACAACA TCAAACCCTC ATTCACACGA
+    11821 GAAAACGCCC TCATAGCCCT ACATATTCTA CCACTACTAC TACTGACCTT AAACCCTAAA
+    11881 ATAATCCTAG GACCCCTTTA CTGTAGATAT AGTTTAATAA AAACCCTAGA TTGTGAATCT
+    11941 AGTAATAGAA AATTAAATAT TCTTATCTAC CGAAAAAGTT TGCAAGAACT GCTAACTCAT
+    12001 GCTTCCACAC TTAAAAATGT GGCTTTTTCA ACTTTTAAAG GATAGCAGTT ATCCGTTGGT
+    12061 CTTAGGAACC AAAAAATTGG TGCAACTCCA AATAAAAGTA ATAAACCCAT TCGCCTCACT
+    12121 CACATTAACC ACACTGACTA TTCTAACCAT CCCAATTATA ATATCCAACT CAAACATCTA
+    12181 CAAAACTAAC CTTTACCCTA ACTACGTAAA AACCACCGTA TCCTACGCCT TCACTCTCAG
+    12241 CCTAGTCCCC TTACTAATAT TTATACACAC AGGCCAAGAA ATAATCATTT CAAACTGACA
+    12301 TTGAATAACC CTACAGACCG TAGAACTCTC TCTTAGCTTT AAAATAGACT ATTTCTCAGT
+    12361 AATATTCATT CCCGTAGCAC TATTCGTCAC ATGATCAATT ATAGAATTCT CCATATGATA
+    12421 CATACACTCA GACCCCTTCA TCAACCGATT CTTCAAATAC CTACTACTAT TCTTAATCAC
+    12481 TATAATAATC CTCGTAACCG CCAACAACCT CTTCCAACTC TTTATCGGAT GAGAAGGCGT
+    12541 AGGAATCATA TCATTCCTGC TAATCGGATG ATGACACGGA CGAACAGACG CCAACACAGC
+    12601 TGCACTACAA GCAATCCTAT ACAACCGCAT CGGAGACATT GGATTTGTCC TATCCATAGC
+    12661 ATGATTCTTA ACCCACTCAA ACGCATGAGA TTTTCAACAA ATCTTTATAC TAAACAATGA
+    12721 ATGCCCAAAC ATACCATTAA TCGGCCTGCT CCTAGCTGCA GCAGGAAAAT CAGCTCAATT
+    12781 CGGACTACAT CCCTGATTGC CCTCAGCAAT AGAAGGCCCA ACTCCCGTAT CAGCATTACT
+    12841 ACACTCCAGT ACAATAGTAG TAGCAGGGGT ATTTCTACTC ATCCGCTTCT ACCCCTTAAT
+    12901 AGAAACTAAC AAACTAGTTC AAACCATAAC ACTATGCCTA GGAGCTATCA CCACCTTATT
+    12961 TACAGCACTA TGTGCAATCA CACAAAATGA TATCAAAAAA ATCGTAGCCT TCTCAACTTC
+    13021 AAGCCAACTA GGCTTGATAA TAGTGACAAT CGGCATCAAC CAACCCCACC TAGCATTTCT
+    13081 TCATATCTGC ATGCACGCTT TCTTCAAAGC AATACTATTC ATATGCTCCG GATCCATTAT
+    13141 CCACAGCCTC AATGACGAAC AAGACATCCG AAAAATAGGC GGACTGTATA AAGCAATACC
+    13201 ATTCACAACA ACAGCACTAA TTATTGGAAG CCTGGCATTA ACAGGAATGC CTTATCTCAC
+    13261 AGGATTCTAC TCAAAAGACC TTATCATTGA AGCAGCAAAC ATATCCTACA CAAACGCCTG
+    13321 AGCCCTACTA ATAACATTAA TTGCCACATC CCTAACCGCT GCCTACAGCA CTCGAATTAT
+    13381 CTTCTTTGCA TTCCTAGGGC AACCACGTTT CCCACCCCTA GTCCTAATTA ATGAAAATAA
+    13441 CCCCCTACTA ATTAACTCTA TTAAACGCCT TTTAATCGGA AGCATCTTCG CTGGCTTTAT
+    13501 CATCTCCAAC AACATCCCAC CAATAACAGT ACCAAACACA ACAATACCCC TTTACATAAA
+    13561 AATAACAGCC CTAATCGTAA CCATCATAGG ATTCATACTA GCCCTAGAGC TAAACAACAC
+    13621 AACCTACTAC CTGAAATTCA AATACCCATC ACAAACATAC AAATTTTCCA ACATACTAGG
+    13681 ATATTATCCC TCCATCATAC ACCGCCTACC AACATACCAC AACCTGTCTA TAAGCCAAAA
+    13741 ATCCGCATCA TCATTACTAG ACTTAATTTG ACTAGAAACT ATTCTACCAA AAACAACCTC
+    13801 TTTCATCCAA ATAAAAATAT CAATTATAGT ATCAAATCAA AAAGGCCTAA TCAAACTATA
+    13861 CTTTCTCTCC TTCCTAATCA CTATTATAAT CAGCATAATA CTATTTAATT ACCACGAGTA
+    13921 ATCTCCATAA TAACAACAAC TCCAATAAGC AATGATCAAC CAGTAACAAT AACTAATCAA
+    13981 GTACCATAAC TATATAAAGC AGCAATCCCC ATAGCTTCCT CACTAAAAAA CCCTGAATCA
+    14041 CCCGTATCAT AAATTACTCA ATCCCCAAGC CCATTAAACT TAAAAATAAT TTCTACTTCC
+    14101 TCTTCCTTCA ATGCATAATA AACCATACAA AACTCCATTA TTAAACCAGA AACAAATGCT
+    14161 CCAAAAACAG TCTTATTAGA AACTCAAACC TCAGGGTACA TCTCAGTAGC CATGGCAGTA
+    14221 GTATAACCAA AAACCACTAA CATACCCCCC AAATAAATCA AAAACACCAT TAAACCTAAA
+    14281 AAAGACCCAC CAAAATTCAA TACAATACCA CAACCAACTC CACCACTTAC AATCAACCCA
+    14341 AGTCCACCAT AAATAGGAGA GGGTTTAGAA GAAAAACCAA CAAACCCAAT AACAAAAATA
+    14401 GTACTTAAAA TAAATGCAAT ATATATTGTC ATTATTCTCA CATGGAATCT AACCACGACC
+    14461 AATGACATGA AAAATCATCG TTGTACTTCA ACTACAAGAA CCTTAATGAC CAACATCCGA
+    14521 AAATCACACC CACTAATAAA AATTATCAAC AACGCATTCA TTGACCTCCC AGCCCCCTCA
+    14581 AACATCTCAT CATGATGAAA CTTCGGTTCC CTCTTAGGCA TCTGCCTAAT CTTGCAAATC
+    14641 CTAACAGGCC TGTTCTTAGC AATACATTAC ACATCAGACA CAACAACAGC TTTCTCATCA
+    14701 GTTACACACA TCTGTCGAGA CGTAAATTAC GGATGAATTA TTCGCTACCT ACATGCAAAC
+    14761 GGAGCATCCA TGTTCTTTAT TTGCCTATTC ATCCACGTAG GCCGAGGCCT ATACTACGGA
+    14821 TCCTATATAT TCCTAGAAAC ATGAAACATT GGAGTAGTCC TACTATTTAC CGTTATAGCA
+    14881 ACAGCCTTCA TAGGCTACGT CCTGCCCTGA GGACAAATAT CATTTTGAGG AGCTACGGTC
+    14941 ATCACAAATC TACTATCAGC TATCCCTTAT ATCGGAACAG ACCTCGTAGA ATGAATCTGA
+    15001 GGGGGCTTTT CCGTCGACAA AGCAACCCTC ACACGATTCT TCGCCTTTCA CTTTATCCTG
+    15061 CCATTCATCA TTACCGCCCT CGCAGCCGTA CATCTCCTAT TCCTGCACGA AACCGGATCC
+    15121 AACAACCCTA CCGGAATCTC ATCAGACATA GACAAAATTC CATTTCACCC ATACTACACT
+    15181 ATTAAAGACA TTCTAGGGGC CTTATTTATA ATACTAATCC TACTAATCCT TGTACTATTC
+    15241 TCACCAGACC TACTAGGAGA CCCAGACAAC TACACCCCAG CAAACCCACT AAACACCCCA
+    15301 CCCCATATTA AACCAGAATG ATATTTCTTA TTCGCCTACG CTATCCTACG TTCAATTCCT
+    15361 AATAAACTAG GTGGAGTGCT AGCTCTAGTA GCCTCCATCC TAATCCTAAT TTTAATGCCC
+    15421 ATACTACACA CATCCAAACA ACGAAGCATA ATATTCCGAC CACTAAGTCA ATGCCTATTC
+    15481 TGAATACTAG TAGCAGACCT CATTACACTA ACATGAATTG GAGGACAACC CGTAGAACAC
+    15541 CCATTCATCA TCATCGGCCA ACTAGCCTCC ATCTTATATT TCCTAATCAT TCTAGTATTG
+    15601 ATACCAATCA CTAGCATCAT CGAAAACAAC CTATTAAAGT GAAGAGTCTT TGTAGTATAT
+    15661 AAAATACCCT GGTCTTGTAA ACCAGAAAAG GAGGACCACC CCTCCCCAAG ACTCAAGGAA
+    15721 GGAGACTAAC TCCGCCATCA GCACCCAAAG CTGAAATTCT AACTAAACTA TTCCCTGCAA
+    15781 CCAAAACAAG CATTCCATTC GTATGCAAAC CAAAACGCCA AGTACTTAAT TACTATCTTT
+    15841 AAAACAAAAA AACCCATAAA AATTGCGCAC AAACATACAA ATATGCGACC CCAAAAATTT
+    15901 AACCATTAAA AACAAAAAAA TTTAATATAT TATAGCCCTA TGTACGTCGT GCATTAATTG
+    15961 CTAGTCCCCA TGCATATAAG CATGTACATA CTATTATTAA TATTACATAG TACATATTAT
+    16021 TATTGATCGT ACATAGCACA TATCATGTCA AATAACTCTA GTCAACATGC GTATCACCAC
+    16081 CACTAGATCA CGAGCTTAAT TACCATGCCG CGTGAAACCA GCAACCCGCT TGGCAGGGAT
+    16141 CCCTCTTCTC GCTCCGGGCC CATAAATCGT GGGGGTTTCT ATTGATGAAC TTTAACAGGC
+    16201 ATCTGGTTCT TACTTCAGGA CCATCTCATC TAAAATCGCC CACTCTTTCC CCTTAAATAA
+    16261 GACATCTCGA TGGACTAGTG ACTAATCAGC CCATGCTCAC ACATAACTGA GGTTTCATAC
+    16321 ATTTGGTATT TTTTAACTTT TGGGGATGCT TGGACTCAGC CATGGCCGTC AAAGGCCCTA
+    16381 ACACAGTCAA ATCAATTGTA GCTGGACTTC ATGGAACTCA TGATCCGGCA CGATAATCCA
+    16441 AACAAGGTGC TATTCAGTCA ATGGTTACAG GACATAACGT GCGTACACGT GCGTACACGT
+    16501 GCGTACACGT GCGTACACGT GCGTACACGT GCGTACACGT GCGTACACGT GCGTACACGT
+    16561 G
+//
+
