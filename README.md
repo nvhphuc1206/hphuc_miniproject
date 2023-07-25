@@ -6,7 +6,7 @@ This repository is build to analyze sequencing data then assemble and analyze th
 - Trimming and filtering sequencing data (if needed)
 - De novo assembly of the mitochondrial genome 
 - Annotating the assembled genome 
-- Identifying the species of the this wild pig using mitochondria genome sequence.
+- Identifying the species of the wild pig using mitochondria genome sequence.
 
 The pipeline includes 6 modules:
 - Module 1: Quality control for raw data [FastQC](https://github.com/s-andrews/FastQC)
