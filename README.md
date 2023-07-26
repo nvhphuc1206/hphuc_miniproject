@@ -9,7 +9,7 @@ This repository is build to analyze sequencing data then assemble and analyze th
 - Identifying the species of the wild pig using mitochondria genome sequence.
 
 The pipeline includes 6 modules:
-- Module 1: Quality control for raw data [FastQC](https://github.com/s-andrews/FastQC)
+- Module 1: Quality control for raw data [FastQC](https://github.com/s-andrews/FastQC) ***Chỗ này hơi thừa vì Fastp đã làm nhiệm vụ QC***
 - Module 2: Trimming and filtering [Fastp](https://github.com/OpenGene/fastp)
 - Module 3: De novo assembly [GetOrganelle](https://github.com/Kinggerm/GetOrganelle)
 - Module 4: Quality control for assembly result [Bandage](https://github.com/rrwick/Bandage)
@@ -73,7 +73,7 @@ bash Module1_QC.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.
 
 
 ### Module 2: Trimming and filtering sequencing data by Fastp
-- `Module2_Filtering.sh` is used to trim and filter sequencing paired-end reads by [Fastp](https://github.com/OpenGene/fastp) and re-quality-control of filtered results by [FastQC](https://github.com/s-andrews/FastQC)
+- `Module2_Filtering.sh` is used to trim and filter sequencing paired-end reads by [Fastp](https://github.com/OpenGene/fastp) and re-quality-control of filtered results by [FastQC](https://github.com/s-andrews/FastQC) ***Superfluous***
 ```sh 
 bash Module2_Filtering.sh <input1> <input2> <output_directory> <quality_control_output_directory> <argument1> <argument2> <argument3> <argument4> <argument5>
 ```
@@ -148,7 +148,7 @@ Bandage
 - To identify the target pig species, I used the MUSCLE algorithm tool included in the MEGA (MUltiple Sequence Comparison by Log- Expectation) tool to perform Multiple Sequence Alignment with the database of Suidae family `database`. From the alignment results, I draw a phylogenetic tree to find the most closely related species.
 - Instructions for downloading and using MEGA can be consulted from the links below:
     - `https://www.megasoftware.net/`
-- BLAST NCBI will be the tool to double check the results by blasting the assembly sequence against the database from NCBI
+- BLAST NCBI will be the tool to double check the results by blasting the assembly sequence against the database from NCBI ***Lưu ý về việc chọn database và gene marker để BLAST***
     - `https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome`
 
 
@@ -157,6 +157,7 @@ Bandage
 ```sh 
 bash Mainscript.sh <input1> <input2> <output_directory> <quality_control_output_directory> <assembly_output_directory> <bandage_output_directory> <argument1> <argument2> <argument3> <argument4> <argument5>
 ```
+***Đây là 1 code quá nặng về parameter và ko có hướng dẫn hay đối số rõ ràng !***
 - Therein:
     - `input1`: path to first input target-trimmed file
     - `input2`: path to second input target-trimmed file
