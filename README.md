@@ -174,6 +174,8 @@ bash Mainscript.sh raw_data/SRR1581065_1_sub.fastq.gz raw_data/SRR1581065_2_sub.
 
 ---
 ## Structure of repository:
+
+***Một điều quan trọng đã nhắc: ko commit dữ liệu hay data nặng lên github. Nên up lên 1 nền tảng drive hay đám mây và share link***
 ```sh
 mini_project
 ├── Mainscript.sh
